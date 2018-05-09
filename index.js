@@ -111,7 +111,7 @@ bot.on("message", async message => {
   }
 
   if(cmd === `${prefix}srank`){
-    return message.channel.send("It's the best feeling ever!");
+    return message.channel.send("This is the best feeling ever!");
   }
 
    if(cmd === `${prefix}ssrank`){
