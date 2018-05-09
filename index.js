@@ -23,8 +23,9 @@ fs.readdir("./commands/", (err, files) => {
 });
 
 bot.on("ready", async () => {
-  console.log(`${bot.user.username} is online!`);
-  bot.user.setPresence({game:{name:'Satsujin love bot',type:0}});﻿
+  console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
+  bot.user.setActivity("Haru love bot", {type:0});
+
 });
 
 
