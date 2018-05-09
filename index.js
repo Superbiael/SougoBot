@@ -40,7 +40,7 @@ if (msg.startsWith (prefix + "send")) {
         message.delete();
         mentionMessage = message.content.slice(6);
         mention.sendMessage (mentionMessage);
-//        return message.channel.send ("Message sent.");
+        return message.channel.send ("Message sent.");
       }
   
     if (msg.startsWith ("i would die for you sougo")) {
