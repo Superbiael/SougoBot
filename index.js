@@ -33,15 +33,15 @@ bot.on('message', message => {
 
      msg = message.content.toLowerCase();
   
-//     mention = message.mentions.users.first();
+     mention = message.mentions.users.first();
 
-//if (msg.startsWith (prefix + "send")) {
-//       if (mention == null) { return; }
-//        message.delete();
-//        mentionMessage = message.content.slice(6);
-//        mention.sendMessage (mentionMessage);
+if (msg.startsWith (prefix + "send")) {
+       if (mention == null) { return; }
+        message.delete();
+        mentionMessage = message.content.slice(6);
+        mention.sendMessage (mentionMessage);
 //        return message.channel.send ("Message sent.");
-//      }
+      }
   
     if (msg.startsWith ("i would die for you sougo")) {
     return message.channel.send("You will.");
