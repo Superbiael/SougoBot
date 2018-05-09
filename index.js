@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 const fs = require("fs");
 bot.commands = new Discord.Collection();
-const prefix = "y!";
+const prefix = "s!";
 
 fs.readdir("./commands/", (err, files) => {
 
@@ -66,7 +66,7 @@ bot.on("message", async message => {
   if(message.author.box) return;
   if(message.channel.type === "dm") return;
 
-  let prefix = 'y!';
+  let prefix = 's!';
   let messageArray = message.content.split( " ");
   let cmd = messageArray[0]
   let args = messageArray.slice(1);
