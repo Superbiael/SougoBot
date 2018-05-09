@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 const fs = require("fs");
 bot.commands = new Discord.Collection();
-//const prefix = "s!";
+const prefix = "y!";
 
 fs.readdir("./commands/", (err, files) => {
 
@@ -24,7 +24,7 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setPresence({game:{name:'Haru love bot',type:0}});﻿
+  bot.user.setPresence({game:{name:'Satsujin love bot',type:0}});﻿
 });
 
 
@@ -32,7 +32,7 @@ bot.on('message', message => {
   if (message.author.bot) return;
 
      msg = message.content.toLowerCase();
-  
+ 
      mention = message.mentions.users.first();
 
   if (msg.startsWith (prefix + "send")) {
@@ -42,7 +42,7 @@ bot.on('message', message => {
         mention.sendMessage (mentionMessage);
 //        return message.channel.send ("Message sent.");
       }
-  
+
     if (msg.startsWith ("i would die for you sougo")) {
     return message.channel.send("You will.");
     }
@@ -58,13 +58,14 @@ bot.on('message', message => {
     if (msg.startsWith ("good night sougo")) {
     return message.channel.send("Good night. I look forward to seeing you again tomorrow morning!");
     }
+  
 });
 
 bot.on("message", async message => {
   if(message.author.box) return;
   if(message.channel.type === "dm") return;
 
-  let prefix = 's!';
+  let prefix = 'y!';
   let messageArray = message.content.split( " ");
   let cmd = messageArray[0]
   let args = messageArray.slice(1);
