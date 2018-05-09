@@ -86,6 +86,10 @@ bot.on("message", async message => {
   return message. channel.send(botembed);
   }
 
+  if(cmd === `${prefix}tiddy`){
+    return message.channel.send ("Tsunashi-san!", {files:["./images/icon306.png"]});
+  }
+  
   if(cmd === `${prefix}mafia` || cmd === `${prefix}maf`){
     return message.channel.send("maf maf");
   }
