@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 const fs = require("fs");
 bot.commands = new Discord.Collection();
+const prefix = "s!";
 
 fs.readdir("./commands/", (err, files) => {
 
@@ -31,6 +32,16 @@ bot.on('message', message => {
   if (message.author.bot) return;
 
      msg = message.content.toLowerCase();
+  
+       mention = message.mentions.users.first();
+
+  if (msg.startsWith (prefix + "send")) {
+       if (mention == null) { return; }
+        message.delete();
+        mentionMessage = message.content.slice(6);
+        mention.sendMessage (mentionMessage);
+        return message.channel.send ("Message sent.");
+      }
   
     if (msg.startsWith ("i would die for you sougo")) {
     return message.channel.send("You will.");
