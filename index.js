@@ -97,9 +97,9 @@ bot.on("message", async message => {
   if(cmd === `${prefix}smooch`){
       let modRole = message.guild.roles.find("name","QUEEN.");
       if(message.member.roles.has(modRole.id)) {
-        message.channel.sendMessage("Fufu, I'm getting a little embarrassed.");
+        message.channel.send("Fufu, I'm getting a little embarrassed.");
       } else {
-        message.channel.sendMessage("O-Oh, that was out of nowhere.");
+        message.channel.send("O-Oh, that was out of nowhere.");
       }
   }
 
