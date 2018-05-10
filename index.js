@@ -43,20 +43,15 @@ bot.on('message', message => {
         mention.send (mentionMessage);
 //        return message.channel.send ("Message sent.");
       }
-
-    if (msg.startsWith ("i would die for you sougo")) {
-    return message.channel.send("You will.");
-    }
-
+  
   if (msg.startsWith ("i love you sougo")) {
-        let modRole = message.guild.roles.find("name","QUEEN.");
+      let modRole = message.guild.roles.find("name","QUEEN.");
       if(message.member.roles.has(modRole.id)) {
-        message.channel.send("Worked");
+        message.channel.send("I love you too, Haru. Spending time with you is like a dream come true. I'm so happy!");
       } else {
-        message.channel.send("nay");
+        message.channel.send("Thank you, I'm sorry I'm not sure if I can return the favor. I appreciate the sentiment though!");
       }
   }
-
   
     if (msg.startsWith ("good morning sougo")) {
     return message.channel.send("Good morning. Let's do our best today!");
@@ -85,28 +80,35 @@ bot.on("message", async message => {
   let bicon = bot.user.displayAvatarURL;
   let botembed = new Discord.RichEmbed()
     .setDescription("Bot Information")
-    .setColor("#00ff67")
+    .setColor("#825aae")
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
 
   return message. channel.send(botembed);
   }
 
-  if(cmd === `${prefix}tiddy`){
-    return message.channel.send ("Tsunashi-san!", {files:["./images/icons306.png"]});
+  if(cmd === `${prefix}smooch`){
+      let modRole = message.guild.roles.find("name","QUEEN.");
+      if(message.member.roles.has(modRole.id)) {
+        message.channel.send("Fufu... I'm getting a little embarrassed. I hope you don't mind if I return the favor~");
+      } else {
+        message.channel.send("O-Oh, that was out of nowhere.");
+      }
   }
   
   if(cmd === `${prefix}mafia` || cmd === `${prefix}maf`){
     return message.channel.send("maf maf");
   }
 
-  if(cmd === `${prefix}smooch`){
-      let modRole = message.guild.roles.find("name","QUEEN.");
-      if(message.member.roles.has(modRole.id)) {
-        message.channel.send("Fufu, I'm getting a little embarrassed.");
-      } else {
-        message.channel.send("O-Oh, that was out of nowhere.");
-      }
+   if(cmd === `${prefix}tiddy`){
+
+    return message.channel.send ("Tsunashi-san!", {files:["./images/icons306.png"]});
+  
+}
+  
+
+  if(cmd === `${prefix}order`){
+    return message.channel.send("We're fresh out of Yuki (lol) ");
   }
 
   if(cmd === `${prefix}crank`){
