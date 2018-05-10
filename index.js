@@ -87,10 +87,10 @@ bot.on("message", async message => {
   return message. channel.send(botembed);
   }
 
-  if(cmd === `${prefix}smooch`){
+if(cmd === `${prefix}smooch`){
       let modRole = message.guild.roles.find("name","QUEEN.");
       if(message.member.roles.has(modRole.id)) {
-        message.channel.send("Fufu... I'm getting a little embarrassed. I hope you don't mind if I return the favor~");
+        message.channel.send("Fufu, I'm getting a little embarrassed.");
       } else {
         message.channel.send("O-Oh, that was out of nowhere.");
       }
@@ -105,8 +105,7 @@ bot.on("message", async message => {
     return message.channel.send ("Tsunashi-san!", {files:["./images/icons306.png"]});
   
 }
-  
-
+ 
   if(cmd === `${prefix}order`){
     return message.channel.send("We're fresh out of Yuki (lol) ");
   }
