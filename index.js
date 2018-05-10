@@ -48,14 +48,14 @@ bot.on('message', message => {
     return message.channel.send("You will.");
     }
 
-    if (msg.startsWith ("i love you sougo")) {
-      let modRole = message.guild.roles.find("name","QUEEN.");
-      if(message.member.roles.has(modRole.id)) {
-        message.channel.send("I love you too, Haru. Spending time with you is like a dream come true. I'm so happy!");
-      } else {
-        message.channel.send("Thank you, I'm sorry I'm not sure if I can return the favor. I appreciate the sentiment though!");
-      }
-  }
+//    if (msg.startsWith ("i love you sougo")) {
+//      let modRole = message.guild.roles.find("name","QUEEN.");
+//      if(message.member.roles.has(modRole.id)) {
+//        message.channel.send("I love you too, Haru. Spending time with you is like a dream come true. I'm so happy!");
+//      } else {
+//        message.channel.send("Thank you, I'm sorry I'm not sure if I can return the favor. I appreciate the sentiment though!");
+//      }
+//  }
 
     if (msg.startsWith ("good morning sougo")) {
     return message.channel.send("Good morning. Let's do our best today!");
