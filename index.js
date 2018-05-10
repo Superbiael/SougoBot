@@ -67,7 +67,7 @@ bot.on("message", async message => {
   if(message.author.box) return;
   if(message.channel.type === "dm") return;
 
-  let prefix = 's!';
+  let prefix = "s!";
   let messageArray = message.content.split( " ");
   let cmd = messageArray[0]
   let args = messageArray.slice(1);
