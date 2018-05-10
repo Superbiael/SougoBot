@@ -41,7 +41,7 @@ bot.on('message', message => {
         message.delete();
         mentionMessage = message.content.slice(6);
         mention.send (mentionMessage);
-//        return message.channel.send ("Message sent.");
+//        return message.channel.send("Message sent.");
       }
   
   if (msg.startsWith ("i love you sougo")) {
@@ -101,14 +101,9 @@ if(cmd === `${prefix}smooch`){
   }
 
    if(cmd === `${prefix}tiddy`){
-
     return message.channel.send ("Tsunashi-san!", {files:["./images/icons306.png"]});
-  
 }
- 
-  if(cmd === `${prefix}order`){
-    return message.channel.send("We're fresh out of Yuki (lol) ");
-  }
+
 
   if(cmd === `${prefix}crank`){
     return message.channel.send("Tonight we'll practice all night.");
