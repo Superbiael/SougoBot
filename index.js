@@ -34,6 +34,32 @@ bot.on('message', message => {
 
      msg = message.content.toLowerCase();
  
+    if(msg.startsWith (prefix + "scout")) {
+      number = 32; 
+      var random = Math.floor (Math.random() * (number)) + 1;
+      switch (random) {
+        case 1: message.channel.send ({files:["./images/soug_xmasmagic_ssr.png"]}); break;
+        case 2: message.channel.send ({files:["./images/sougo_ainanapolice_r.png"]}); break;
+        case 3: message.channel.send ({files:["./images/sougo_ainanapolice_sr.png"]}); break;
+        case 4: message.channel.send ({files:["./images/sougo_ainanapolice_ssr.png"]}); break;
+        case 5: message.channel.send ({files:["./images/sougo_dayoff_ssr.png"]}); break;
+        case 6 message.channel.send ({files:["./images/sougo_marchen_ssr.png"]}); break;
+        case 7: message.channel.send ({files:["./images/sougo_mlullaby_ssr.png"]}); break;
+        case 8: message.channel.send ({files:["./images/sougo_sweets_ssr.png"]}); break;
+        case 9: message.channel.send ({files:["./images/sougo_unit_ssr.png"]}); break;
+        case 10:message.channel.send ({files:["./images/sougo_unit_ur.png"]}); break;
+        case 11 message.channel.send ({files:["./images/sougo_valentine_ssr.png"]}); break;
+        case 12: message.channel.send ({files:["./images/sougo_whiteday_sr.png"]}); break;
+        case 13: message.channel.send ({files:["./images/sougo_whiteday_ssr.png"]}); break;
+        case 14: message.channel.send ({files:["./images/sougo_whiteside_ssr.png"]}); break;
+        case 15:message.channel.send ({files:["./images/sougo_winterwonderland_sr.png"]}); break;
+        case 16: message.channel.send ({files:["./images/sougo_winterwonderland_ssr.png"]}); break;
+        case 17: message.channel.send ({files:["./images/sougo_wishvoyage_ur.png"]}); break;
+        case 18: message.channel.send ({files:["./images/sougo_work_sr.png"]}); break;
+        case 19:message.channel.send ({files:["./images/sougo_work_ssr.png"]}); break;
+      }
+    }
+  
      mention = message.mentions.users.first();
 
   if (msg.startsWith (prefix + "send")) {
