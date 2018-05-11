@@ -35,7 +35,7 @@ bot.on('message', message => {
      msg = message.content.toLowerCase();
  
     if(msg.startsWith (prefix + "scout")) {
-      number = 32; 
+      number = 19; 
       var random = Math.floor (Math.random() * (number)) + 1;
       switch (random) {
         case 1: message.channel.send ({files:["./images/soug_xmasmagic_ssr.png"]}); break;
