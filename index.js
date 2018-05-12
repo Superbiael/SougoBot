@@ -35,7 +35,7 @@ bot.on('message', message => {
      msg = message.content.toLowerCase();
  
     if(msg.startsWith (prefix + "scout")) {
-      number = 40; 
+      number = 41; 
       var random = Math.floor (Math.random() * (number)) + 1;
       switch (random) {
 //shout
@@ -62,24 +62,25 @@ bot.on('message', message => {
         case 20:message.channel.send ({files:["./images/sougo_album_ssr.png"]}); break;
         case 21:message.channel.send ({files:["./images/sougo_birthday_sr.png"]}); break;
         case 22:message.channel.send ({files:["./images/sougo_birthday_ssr.png"]}); break;
-        case 23:message.channel.send ({files:["./images/sougo_endofyear_ssr.png"]}); break;
-        case 24:message.channel.send ({files:["./images/sougo_joker_ssr.png"]}); break;
-        case 25:message.channel.send ({files:["./images/sougo_linkedfeelings_ssr.png"]}); break;
-        case 26:message.channel.send ({files:["./images/sougo_lovegame_ssr.png"]}); break;
-        case 27:message.channel.send ({files:["./images/sougo_monster_sr.png"]}); break;
-        case 28:message.channel.send ({files:["./images/sougo_monster_ssr.png"]}); break;
-        case 29:message.channel.send ({files:["./images/sougo_nanatsuirorealize_ssr.png"]}); break;
-        case 30:message.channel.send ({files:["./images/sougo_ordinarydays_r.png"]}); break;
-        case 31:message.channel.send ({files:["./images/sougo_ordinarydays_sr.png"]}); break;
-        case 32:message.channel.send ({files:["./images/sougo_ordinarydays_ssr.png"]}); break;
-        case 33:message.channel.send ({files:["./images/sougo_outdoorfes_ssr.png"]}); break;
-        case 34:message.channel.send ({files:["./images/sougo_outdoorfes_ur.png"]}); break;
-        case 35:message.channel.send ({files:["./images/sougo_summermemories_sr.png"]}); break;
-        case 36:message.channel.send ({files:["./images/sougo_summermemories_ssr.png"]}); break;
-        case 37:message.channel.send ({files:["./images/sougo_taisho_ssr.png"]}); break;
-        case 38:message.channel.send ({files:["./images/sougo_whiteday_beat_ssr.png"]}); break;
-        case 39:message.channel.send ({files:["./images/sougo_xmasrock_ssr.png"]}); break;
-        case 40:message.channel.send ({files:["./images/sougo_zodiac_ssr.png"]}); break;
+        case 23:message.channel.send ({files:["./images/sougo_endofyear_sr.png"]}); break;
+        case 24:message.channel.send ({files:["./images/sougo_endofyear_ssr.png"]}); break;
+        case 25:message.channel.send ({files:["./images/sougo_joker_ssr.png"]}); break;
+        case 26:message.channel.send ({files:["./images/sougo_linkedfeelings_ssr.png"]}); break;
+        case 27:message.channel.send ({files:["./images/sougo_lovegame_ssr.png"]}); break;
+        case 28:message.channel.send ({files:["./images/sougo_monster_sr.png"]}); break;
+        case 29:message.channel.send ({files:["./images/sougo_monster_ssr.png"]}); break;
+        case 30:message.channel.send ({files:["./images/sougo_nanatsuirorealize_ssr.png"]}); break;
+        case 31:message.channel.send ({files:["./images/sougo_ordinarydays_r.png"]}); break;
+        case 32:message.channel.send ({files:["./images/sougo_ordinarydays_sr.png"]}); break;
+        case 33:message.channel.send ({files:["./images/sougo_ordinarydays_ssr.png"]}); break;
+        case 34:message.channel.send ({files:["./images/sougo_outdoorfes_ssr.png"]}); break;
+        case 35:message.channel.send ({files:["./images/sougo_outdoorfes_ur.png"]}); break;
+        case 36:message.channel.send ({files:["./images/sougo_summermemories_sr.png"]}); break;
+        case 37:message.channel.send ({files:["./images/sougo_summermemories_ssr.png"]}); break;
+        case 38:message.channel.send ({files:["./images/sougo_taisho_ssr.png"]}); break;
+        case 39:message.channel.send ({files:["./images/sougo_whiteday_beat_ssr.png"]}); break;
+        case 40:message.channel.send ({files:["./images/sougo_xmasrock_ssr.png"]}); break;
+        case 41:message.channel.send ({files:["./images/sougo_zodiac_ssr.png"]}); break;
       }
     }
   
