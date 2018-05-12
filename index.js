@@ -49,7 +49,7 @@ bot.on('message', message => {
         case 8: message.channel.send ({files:["./images/sougo_sweets_ssr.png"]}); break;
         case 9: message.channel.send ({files:["./images/sougo_unit_ssr.png"]}); break;
         case 10:message.channel.send ({files:["./images/sougo_unit_ur.png"]}); break;
-        case 10:message.channel.send ({files:["./images/sougo_valentine_ssr.png"]}); break;
+        case 11:message.channel.send ({files:["./images/sougo_valentine_ssr.png"]}); break;
         case 12: message.channel.send ({files:["./images/sougo_whiteday_sr.png"]}); break;
         case 13: message.channel.send ({files:["./images/sougo_whiteday_ssr.png"]}); break;
         case 14: message.channel.send ({files:["./images/sougo_whiteside_ssr.png"]}); break;
@@ -79,7 +79,7 @@ bot.on('message', message => {
         case 37:message.channel.send ({files:["./images/sougo_taisho_ssr.png"]}); break;
         case 38:message.channel.send ({files:["./images/sougo_whiteday_beat_ssr.png"]}); break;
         case 39:message.channel.send ({files:["./images/sougo_xmasrock_ssr.png"]}); break;
-        case 39:message.channel.send ({files:["./images/sougo_zodiac_ssr.png"]}); break;
+        case 40:message.channel.send ({files:["./images/sougo_zodiac_ssr.png"]}); break;
       }
     }
   
