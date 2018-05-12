@@ -35,7 +35,7 @@ bot.on('message', message => {
      msg = message.content.toLowerCase();
  
     if(msg.startsWith (prefix + "scout")) {
-      number = 39; 
+      number = 40; 
       var random = Math.floor (Math.random() * (number)) + 1;
       switch (random) {
 //shout
