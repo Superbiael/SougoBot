@@ -179,6 +179,11 @@ if(cmd === `${prefix}smooch`){
     return message.channel.send ("Tsunashi-san!", {files:["./images/icons306.png"]});
 }
 
+   if(cmd === `${prefix}say`){
+  let botmessage = args.join(" ");
+  message.delete().catch();
+  message.channel.send(botmessage);
+}
 
   if(cmd === `${prefix}crank`){
     return message.channel.send("Tonight we'll practice all night.");
