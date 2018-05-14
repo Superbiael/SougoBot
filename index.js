@@ -35,10 +35,9 @@ bot.on('message', message => {
      msg = message.content.toLowerCase();
  
     if(msg.startsWith (prefix + "scout")) {
-      number = 62; 
+      number = 63; 
       var random = Math.floor (Math.random() * (number)) + 1;
       switch (random) {
-//shout
         case 1: message.channel.send ({files:["./images/soug_xmasmagic_ssr.png"]}); break;
         case 2: message.channel.send ({files:["./images/sougo_ainanapolice_r.png"]}); break;
         case 3: message.channel.send ({files:["./images/sougo_ainanapolice_sr.png"]}); break;
@@ -58,7 +57,6 @@ bot.on('message', message => {
         case 17: message.channel.send ({files:["./images/sougo_wishvoyage_ur.png"]}); break;
         case 18: message.channel.send ({files:["./images/sougo_work_sr.png"]}); break;
         case 19:message.channel.send ({files:["./images/sougo_work_ssr.png"]}); break;
-//beat
         case 20:message.channel.send ({files:["./images/sougo_album_ssr.png"]}); break;
         case 21:message.channel.send ({files:["./images/sougo_birthday_sr.png"]}); break;
         case 22:message.channel.send ({files:["./images/sougo_birthday_ssr.png"]}); break;
@@ -81,7 +79,6 @@ bot.on('message', message => {
         case 39:message.channel.send ({files:["./images/sougo_whiteday_beat_ssr.png"]}); break;
         case 40:message.channel.send ({files:["./images/sougo_xmasrock_ssr.png"]}); break;
         case 41:message.channel.send ({files:["./images/sougo_zodiac_ssr.png"]}); break;
-//melody
         case 42:message.channel.send ({files:["./images/sougo_academy_r.png"]}); break;
         case 43:message.channel.send ({files:["./images/sougo_academy_sr.png"]}); break;
         case 44:message.channel.send ({files:["./images/sougo_academy_ssr.png"]}); break;
@@ -103,6 +100,7 @@ bot.on('message', message => {
         case 60:message.channel.send ({files:["./images/sougo_sparkle_ssr.png"]}); break;
         case 61:message.channel.send ({files:["./images/sougo_valentine_ssr.png"]}); break;
         case 62:message.channel.send ({files:["./images/sougo_work_ssr.png"]}); break;
+        case 63:message.channel.send ({files:["./images/sougo_teagarden_ssr.png"]}); break;
       }
     }
   
