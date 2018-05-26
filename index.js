@@ -35,7 +35,7 @@ bot.on('message', message => {
      msg = message.content.toLowerCase();
  
     if(msg.startsWith (prefix + "scout")) {
-      number = 64; 
+      number = 66; 
       var random = Math.floor (Math.random() * (number)) + 1;
       switch (random) {
         case 1: message.channel.send ({files:["./images/soug_xmasmagic_ssr.png"]}); break;
@@ -102,6 +102,8 @@ bot.on('message', message => {
         case 62:message.channel.send ({files:["./images/sougo_work_ssr.png"]}); break;
         case 63:message.channel.send ({files:["./images/sougo_teagarden_ssr.png"]}); break;
         case 64:message.channel.send ({files:["./images/yukisougo_shufle_ssr.png"]}); break;
+        case 65:message.channel.send ({files:["./images/sougo_12sg_sr.png"]}); break;
+        case 66:message.channel.send ({files:["./images/sougo_12sg_ssr.png"]}); break;
       }
     }
   
