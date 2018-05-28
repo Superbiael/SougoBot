@@ -34,6 +34,18 @@ bot.on('message', message => {
 
      msg = message.content.toLowerCase();
  
+       if(msg.startsWith (prefix + "quote")) {
+       number = 5;
+       var random = Math.floor (Math.random() * (number)) + 1;
+       switch (random) {
+         case 1: message.channel.send ("I wonder if you’ll watch over me from by my side."); break;
+         case 2: message.channel.send ("I'm glad that I didn't give up on my dreams."); break;
+         case 3: message.channel.send ("I want to become a little bit more manly."); break;
+         case 4: message.channel.send ("While you were busy fucking around, I studied the blade."); break;
+         case 5: message.channel.send ("I'll have Yamato-san and Mitsuki-san educate me on how to be sexy again."); break;
+      }
+    }
+  
     if(msg.startsWith (prefix + "scout")) {
       number = 66; 
       var random = Math.floor (Math.random() * (number)) + 1;
