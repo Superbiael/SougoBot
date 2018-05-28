@@ -129,14 +129,25 @@ bot.on('message', message => {
 //        return message.channel.send("Message sent.");
       }
   
-  if (msg.startsWith ("i love you sougo")) {
-      let modRole = message.guild.roles.find("name","QUEEN.");
-      if(message.member.roles.has(modRole.id)) {
-        message.channel.send("I love you too, Haru. Spending time with you is like a dream come true. I'm so happy!");
-      } else {
-        message.channel.send("Thank you, I'm sorry I'm not sure if I can return the favor. I appreciate the sentiment though!");
-      }
-  }
+//   if (msg.startsWith ("i love you sougo")) {
+//       let modRole = message.guild.roles.find("name","QUEEN.");
+//       if(message.member.roles.has(modRole.id)) {
+//         message.channel.send("I love you too, Haru. Spending time with you is like a dream come true. I'm so happy!");
+//       } else {
+//         message.channel.send("Thank you, I'm sorry I'm not sure if I can return the favor. I appreciate the sentiment though!");
+//       }
+//   }
+  
+    if (msg.startsWith ("i love you sougo")) {
+    number = 3;
+    var random = Math.floor (Math.random() * (number)) + 1;
+    switch (random) {
+      case 1: message.channel.send ("I love you too, Haru. Spending time with you is like a dream come true. I'm so happy!"); break;
+      case 2: message.channel.send ("If you would allow me to be selfish, I'd like to say that I love you more."); break;
+      case 3: message.channel.send ("I really love you too. I'd like to nuture this feeling forever, and I hope you will keep loving me, too."); break;
+   }
+ }
+  
     if (msg.startsWith ("i would die for you sougo")) {
     return message.channel.send("You will.");
     }
