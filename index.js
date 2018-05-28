@@ -128,16 +128,7 @@ bot.on('message', message => {
         mention.send (mentionMessage);
 //        return message.channel.send("Message sent.");
       }
-  
-//   if (msg.startsWith ("i love you sougo")) {
-//       let modRole = message.guild.roles.find("name","QUEEN.");
-//       if(message.member.roles.has(modRole.id)) {
-//         message.channel.send("I love you too, Haru. Spending time with you is like a dream come true. I'm so happy!");
-//       } else {
-//         message.channel.send("Thank you, I'm sorry I'm not sure if I can return the favor. I appreciate the sentiment though!");
-//       }
-//   }
-  
+    
     if (msg.startsWith ("i love you sougo")) {
     number = 3;
     var random = Math.floor (Math.random() * (number)) + 1;
@@ -174,8 +165,18 @@ bot.on("message", async message => {
   let commandfile = bot.commands.get(cmd.slice(prefix.length));
   if(commandfile) commandfile.run(bot,message,args);
 
-  if(cmd ===`${prefix}botinfo`){
+  if(cmd ===`${prefix}help`){
+  let helpembed = new Discord.RichEmbed()
+  .setDescription("Do not include < > when using commands. \nCommand phrases are not caps sensitive")
+  .setColor("#825aae")
+  .addField("Commands:","**s!sougo** *<question>* | Ask him anything. \n**s!send** *<@user> <message>* | Send a DM to the mentioned user\n**s!scout** | Solo Yolo \n**s!quote** | Random quote\n**s!say** *<message>* | Have the bot say anything you want\n**s!help** | Displays this help message")
+  .addField("Basic s!commands:", "mafia (alias:maf) || smooch || c - ss rank *(ex: s!ssrank)* || tiddy")
+  .addField("Command phrases:", "I love you Sougo || I would die for you Sougo || Good morning Sougo || Good night Sougo")
 
+  message.channel.send(helpembed);
+}
+  
+  if(cmd ===`${prefix}botinfo`){
   let bicon = bot.user.displayAvatarURL;
   let botembed = new Discord.RichEmbed()
     .setDescription("Bot Information")
