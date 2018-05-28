@@ -2,15 +2,14 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot,message, args) => {
 
-  let guideembed = new Discord.RichEmbed()
-  .setDescription("Do not include < > when using commands.")
+  let helpembed = new Discord.RichEmbed()
+  .setDescription("Do not include < > when using commands. \nCommand phrases are not caps sensitive")
   .setColor("#825aae")
-  .addField("s!commands:", "mafia (alias:maf) ||  c - ss rank || smooch || tiddy || scout || say <message> ")
-  .addField("Other commands:", "I love you Sougo || I would die for you sougo || Good morning Sougo || Good night Sougo")
-  .addField("8ball command:", "s!sougo <question>")
-  .addField("Send DM:", "s!send @user <message>");
+  .addField("Commands:","**s!sougo** *<question>* | Ask him anything. \n**s!send** *<@user> <message>* | Send a DM to the mentioned user\n**s!scout** | Solo Yolo \n**s!quote** | Random quote\n**s!say** *<message>* | Have the bot say anything you want\n**s!sougohelp** | Displays this help message")
+  .addField("Basic s!commands:", "mafia (alias:maf) || smooch || c - ss rank *(ex: ss!rank)* || tiddy")
+  .addField("Command phrases:", "I love you Sougo || I would die for you Sougo || Good morning Sougo || Good night Sougo")
 
-  message.channel.send(guideembed);
+  message.channel.send(helpembed);
 }
 
 module.exports.help = {
