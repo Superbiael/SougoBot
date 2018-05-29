@@ -200,6 +200,10 @@ if(cmd === `${prefix}smooch`){
     return message.channel.send("maf maf");
   }
 
+   if(cmd === `${prefix}dickgrab`){
+    return message.channel.send ("Sorry Tsunashi-san if this looks gay to the viewers.", {files:["./images/dickgrab.png"]});
+}
+  
    if(cmd === `${prefix}tiddy`){
     return message.channel.send ("Tsunashi-san!", {files:["./images/icons306.png"]});
 }
