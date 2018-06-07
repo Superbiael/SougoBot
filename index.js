@@ -50,7 +50,9 @@ bot.on('message', message => {
     }
   
     if(msg.startsWith (prefix + "scout")) {
-      number = 66; 
+      let emoji = message.guild.emojis.find('name', "sougo");
+      message.react(emoji);
+      number = 66;
       var random = Math.floor (Math.random() * (number)) + 1;
       switch (random) {
         case 1: message.channel.send ({files:["./images/soug_xmasmagic_ssr.png"]}); break;
