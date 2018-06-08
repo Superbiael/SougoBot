@@ -162,7 +162,7 @@ bot.on('message', message => {
 
 bot.on("message", async message => {
   if(message.author.box) return;
-  if(message.channel.type === "dm") return;
+//   if(message.channel.type === "dm") return;
 
   let prefix = 's!';
   let messageArray = message.content.split( " ");
@@ -189,7 +189,7 @@ bot.on("message", async message => {
     .setColor("#825aae")
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
-
+    .addField("Twitter:", "https://twitter.com/Superbiael")
   return message. channel.send(botembed);
   }
 
