@@ -135,6 +135,7 @@ bot.on('message', message => {
       }
     
     if (msg.startsWith ("i love you sougo")) {
+    if(message.author.id != "239834856727642121") return;
     number = 3;
     var random = Math.floor (Math.random() * (number)) + 1;
     switch (random) {
@@ -145,7 +146,8 @@ bot.on('message', message => {
  }
   
     if (msg.startsWith ("i would die for you sougo")) {
-    return message.channel.send("You will.");
+      message.react(`🔪`);
+      return message.channel.send("You will.");
     }
   
     if (msg.startsWith ("good morning sougo")) {
@@ -175,9 +177,8 @@ bot.on("message", async message => {
   .setDescription("Do not include < > when using commands. \nCommand phrases are not caps sensitive")
   .setColor("#825aae")
   .addField("Commands:","**s!sougo** *<question>* | Ask him anything. \n**s!send** *<@user> <message>* | Send a DM to the mentioned user\n**s!scout** | Solo Yolo \n**s!quote** | Random quote\n**s!say** *<message>* | Have the bot say anything you want\n**s!help** | Displays this help message")
-  .addField("Basic s!commands:", "mafia (alias:maf) || smooch || c - ss rank *(ex: s!ssrank)* || tiddy")
+  .addField("Basic s!commands:", "mafia (alias:maf) || smooch | rank || tiddy")
   .addField("Command phrases:", "I love you Sougo || I would die for you Sougo || Good morning Sougo || Good night Sougo")
-
   message.channel.send(helpembed);
 }
   
