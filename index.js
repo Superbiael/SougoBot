@@ -28,11 +28,20 @@ bot.on("ready", async () => {
 
 });
 
-
 bot.on('message', message => {
   if (message.author.bot) return;
+  // if(message.channel.type === "dm") return;
 
-     msg = message.content.toLowerCase();
+  let prefix = 's!';
+  let messageArray = message.content.split( " ");
+  let cmd = messageArray[0]
+  let args = messageArray.slice(1);
+
+  let commandfile = bot.commands.get(cmd.slice(prefix.length));
+  if(commandfile) commandfile.run(bot,message,args);
+
+    mention = message.mentions.users.first();
+    msg = message.content.toLowerCase();
  
      if(msg.startsWith (prefix + "quote")) {
        number = 8;
@@ -124,8 +133,6 @@ bot.on('message', message => {
       }
     }
   
-     mention = message.mentions.users.first();
-
   if (msg.startsWith (prefix + "send")) {
        if (mention == null) { return; }
         message.delete();
@@ -158,20 +165,6 @@ bot.on('message', message => {
     return message.channel.send("Good night. I look forward to seeing you again tomorrow morning!");
     }
   
-});
-
-bot.on("message", async message => {
-  if(message.author.box) return;
-//   if(message.channel.type === "dm") return;
-
-  let prefix = 's!';
-  let messageArray = message.content.split( " ");
-  let cmd = messageArray[0]
-  let args = messageArray.slice(1);
-
-  let commandfile = bot.commands.get(cmd.slice(prefix.length));
-  if(commandfile) commandfile.run(bot,message,args);
-
   if(cmd ===`${prefix}help`){
   let helpembed = new Discord.RichEmbed()
   .setDescription("Do not include < > when using commands. \nCommand phrases are not caps sensitive")
