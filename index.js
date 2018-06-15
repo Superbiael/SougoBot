@@ -62,8 +62,6 @@ bot.on('message', message => {
     }
   
     if(msg.startsWith (prefix + "scout")) {
-      let emoji = message.guild.emojis.find('name', "sougo");
-      message.react(emoji);
       number = 66;
       var random = Math.floor (Math.random() * (number)) + 1;
       switch (random) {
