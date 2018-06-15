@@ -44,7 +44,7 @@ bot.on('message', message => {
     msg = message.content.toLowerCase();
  
      if(msg.startsWith (prefix + "quote")) {
-       number = 8;
+       number = 11;
        var random = Math.floor (Math.random() * (number)) + 1;
        switch (random) {
          case 1: message.channel.send ("I wonder if you’ll watch over me from by my side."); break;
@@ -55,6 +55,9 @@ bot.on('message', message => {
          case 6: message.channel.send ("I'm seeing the word *HELL* all around me."); break;
          case 7: message.channel.send ("This is so nice. I hope we'll be able to keep going like this. Since I used to collect TRIGGER's merchandise a lot, seeing people wearing ours made me feel nostalgic."); break;
          case 8: message.channel.send ("I wonder if it's alright for me to be this happy..."); break;
+         case 9: message.channel.send ("There's a certain kind of pepper that's said to be the spiciest in the world. I'd like to try it."); break;
+         case 10: message.channel.send ("I wasn't sure abotu what I like about myself... \nBut I think it's that there are so many things I care about. My fellow members, my friends from work, my favorite songs, my concert memories."); break;
+         case 11: message.channel.send ("I like how happy I am when I'm surrounded by the things I love."); break;
       }
     }
   
