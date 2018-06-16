@@ -55,7 +55,7 @@ bot.on('message', message => {
          case 7: message.channel.send ("This is so nice. I hope we'll be able to keep going like this. Since I used to collect TRIGGER's merchandise a lot, seeing people wearing ours made me feel nostalgic."); break;
          case 8: message.channel.send ("I wonder if it's alright for me to be this happy..."); break;
          case 9: message.channel.send ("There's a certain kind of pepper that's said to be the spiciest in the world. I'd like to try it."); break;
-         case 10: message.channel.send ("I wasn't sure abotu what I like about myself... \nBut I think it's that there are so many things I care about. My fellow members, my friends from work, my favorite songs, my concert memories."); break;
+         case 10: message.channel.send ("I wasn't sure about what I like about myself... \nBut I think it's that there are so many things I care about. My fellow members, my friends from work, my favorite songs, my concert memories."); break;
          case 11: message.channel.send ("I like how happy I am when I'm surrounded by the things I love."); break;
       }
     }
@@ -141,6 +141,18 @@ bot.on('message', message => {
 //        return message.channel.send("Message sent.");
       }
     
+    if(msg.startsWith (prefix + "rank")) {
+        number = 5;
+        var random = Math.floor (Math.random() * (number)) + 1;
+        switch (random) {
+          case 1: message.channel.send ("Tonight we'll practive all night"); break;
+          case 2: message.channel.send ("I wanted to do a bit more..."); break;
+          case 3: message.channel.send ("I can still keep going!"); break;
+          case 4: message.channel.send ("This is the best feeling ever!"); break;
+          case 5: message.channel.send ("I was able to shine because of you."); break;
+       }
+     }
+  
     if (msg.startsWith ("i love you sougo")) {
     if(message.author.id != "239834856727642121") return;
     number = 3;
@@ -212,26 +224,6 @@ if(cmd === `${prefix}smooch`){
   message.delete().catch();
   message.channel.send(botmessage);
 }
-
-  if(cmd === `${prefix}crank`){
-    return message.channel.send("Tonight we'll practice all night.");
-  }
-
-  if(cmd === `${prefix}brank`){
-  return message.channel.send("I wanted to do a bit more...");
-  }
-
-  if(cmd === `${prefix}arank`){
-    return message.channel.send("I can still keep going!");
-  }
-
-  if(cmd === `${prefix}srank`){
-    return message.channel.send("This is the best feeling ever!");
-  }
-
-   if(cmd === `${prefix}ssrank`){
-    return message.channel.send("Because of you, I was able to shine.");
-  }
 });
 
 bot.login(process.env.token);
