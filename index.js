@@ -43,7 +43,7 @@ bot.on('message', message => {
     msg = message.content.toLowerCase();
  
      if(msg.startsWith (prefix + "quote")) {
-       number = 11;
+       number = 18;
        var random = Math.floor (Math.random() * (number)) + 1;
        switch (random) {
          case 1: message.channel.send ("I wonder if you’ll watch over me from by my side."); break;
@@ -55,8 +55,14 @@ bot.on('message', message => {
          case 7: message.channel.send ("This is so nice. I hope we'll be able to keep going like this. Since I used to collect TRIGGER's merchandise a lot, seeing people wearing ours made me feel nostalgic."); break;
          case 8: message.channel.send ("I wonder if it's alright for me to be this happy..."); break;
          case 9: message.channel.send ("There's a certain kind of pepper that's said to be the spiciest in the world. I'd like to try it."); break;
-         case 10: message.channel.send ("I wasn't sure about what I like about myself... \nBut I think it's that there are so many things I care about. My fellow members, my friends from work, my favorite songs, my concert memories."); break;
+         case 10: message.channel.send ("I wasn't sure abotu what I like about myself... \nBut I think it's that there are so many things I care about. My fellow members, my friends from work, my favorite songs, my concert memories."); break;
          case 11: message.channel.send ("I like how happy I am when I'm surrounded by the things I love."); break;
+         case 12: message.channel.send ("I was feeling a little restless, so I'm happy you messaged me."); break;
+         case 13: message.channel.send ("I've been reminiscing about all that's happened up until now, too! Like the day I first came to Takanashi Productions."); break;
+         case 15: message.channel.send ("Maybe I really am too much of a fanboy..."); break;
+         case 16: message.channel.send ("In the world I used to live in, only those with the power to control large amounts of cash were taken seriously. I understand that it's not easy for someone to focus on each of us equally as you have done."); break;
+         case 17: message.channel.send ("I'm really happy that everyone's speaking so  highly of me... It makes me feel that no matter how far I must go, I can keep going."); break;
+         case 18: message.channel.send ("I'm perfect fine with Re:vale casting magic on me!"); break;
       }
     }
   
