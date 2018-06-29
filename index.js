@@ -218,11 +218,15 @@ bot.on('message', message => {
   .setDescription("Do not include < > when using commands. \nCommand phrases are not caps sensitive")
   .setColor("#825aae")
   .addField("Commands:","**s!sougo** *<question>* | Ask him anything. \n**s!send** *<@user> <message>* | Send a DM to the mentioned user\n**s!scout** | Solo Yolo \n**s!quote** | Random quote\n**s!say** *<message>* | Have the bot say anything you want\n**s!help** | Displays this help message")
-  .addField("Basic s!commands:", "mafia (alias:maf) || smooch | rank || tiddy")
+  .addField("Basic s!commands:", "mafia (alias:maf) || smooch | rank || tiddy || dickgrab || cat")
   .addField("Command phrases:", "I love you Sougo || I would die for you Sougo || Good morning Sougo || Good night Sougo")
   return botschannel.send(helpembed);
 }
 
+   if(cmd === `${prefix}cat`){
+    botschannel.send ({files:["./images/nya.png"]});
+  }
+  
    if(cmd === `${prefix}smooch`){
       // if(message.author.id != "239834856727642121") return;
       let modRole = message.guild.roles.find("name","QUEEN.");
