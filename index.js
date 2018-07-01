@@ -65,12 +65,7 @@ bot.on('message', message => {
       case 15: botschannel.send ("Maybe I really am too much of a fanboy..."); break;
       case 16: botschannel.send ("In the world I used to live in, only those with the power to control large amounts of cash were taken seriously. I understand that it's not easy for someone to focus on each of us equally as you have done."); break;
       case 17: botschannel.send ("I'm really happy that everyone's speaking so  highly of me... It makes me feel that no matter how far I must go, I can keep going."); break;
-      case 18: botschannel.send ("I'm perfect fine with Re:vale casting magic on me!"); break;
-      // case 19: botschannel.send (""); break;
-      // case 19: botschannel.send (""); break;
-      // case 21: botschannel.send (""); break;
-      // case 22: botschannel.send (""); break;
-      // case 23: botschannel.send (""); break;
+      case 18: botschannel.send ("I'm perfectly fine with Re:vale casting magic on me!"); break;
    }
  }
 
@@ -154,17 +149,7 @@ bot.on('message', message => {
         message.delete();
         mentionMessage = message.content.slice(6);
         mention.send (mentionMessage);
-//        return message.channel.send("Message sent.");
       }
-
-    // if (msg.startsWith ("i love you sougo")) {
-    //     let modRole = message.guild.roles.find("name","QUEEN.");
-    //     if(message.member.roles.has(modRole.id)) {
-    //       message.channel.send("I love you too, Haru. Spending time with you is like a dream come true. I'm so happy!");
-    //     } else {
-    //       message.channel.send("Thank you, I'm sorry I'm not sure if I can return the favor. I appreciate the sentiment though!");
-    //     }
-    // }
 
     if(msg.startsWith (prefix + "rank")) {
         number = 5;
@@ -180,12 +165,13 @@ bot.on('message', message => {
 
     if (msg.startsWith ("i love you sougo")) {
     if(message.author.id != "239834856727642121") return;
-    number = 3;
+    number = 4;
     var random = Math.floor (Math.random() * (number)) + 1;
     switch (random) {
       case 1: botschannel.send ("I love you too, Haru. Spending time with you is like a dream come true. I'm so happy!\n<:sougo:454123472256237600>"); break;
       case 2: botschannel.send ("If you would allow me to be selfish, I'd like to say that I love you more."); break;
       case 3: botschannel.send ("I really love you too. I'd like to nuture this feeling forever, and I hope you will keep loving me, too."); break;
+      case 4: botschannel.send ("I'm not sure if I'm worthy enough for your affection... but it makes me happy that you think I am!"); break;
    }
  }
 
@@ -197,10 +183,15 @@ bot.on('message', message => {
     if (msg.startsWith ("good morning sougo")) {
     return botschannel.send("Good morning. Let's do our best today!");
     }
-
+  
     if (msg.startsWith ("good night sougo")) {
-    return botschannel.send("Good night. I look forward to seeing you again tomorrow morning!");
-    }
+    number = 2;
+    var random = Math.floor (Math.random() * (number)) + 1;
+    switch (random) {
+      case 1: botschannel.send ("Good night. I look forward to seeing you again tomorrow morning!"); break;
+      case 2: botschannel.send ("If you're still awake, then maybe I'll stay up too."); break;
+   }
+ }
 
   if(cmd ===`${prefix}botinfo`){
   let bicon = bot.user.displayAvatarURL;
@@ -228,7 +219,6 @@ bot.on('message', message => {
   }
   
    if(cmd === `${prefix}smooch`){
-      // if(message.author.id != "239834856727642121") return;
       let modRole = message.guild.roles.find("name","QUEEN.");
       if(message.member.roles.has(modRole.id)) {
         botschannel.send("Fufu... I'm getting a little embarrassed. I hope you don't mind if I return the favor~");
