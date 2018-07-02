@@ -21,9 +21,9 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
-bot.on("ready", async () => {
+  bot.on("ready", async () => {
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-  bot.user.setActivity("Diamond Fusion", {type:"LISTENING"});
+  bot.user.setActivity("Risky na Kanojo.", {type:"LISTENING"});
 });
 
 
@@ -69,9 +69,7 @@ bot.on('message', message => {
    }
  }
 
- if(msg.startsWith (prefix + "scout")) {
-   // let emoji = message.guild.emojis.find('name', "sougo");
-   // message.react(emoji);
+  if(msg.startsWith (prefix + "scout")) {
    number = 66
    var random = Math.floor (Math.random() * (number)) + 1;
    switch (random) {
@@ -175,7 +173,7 @@ bot.on('message', message => {
    }
  }
 
-    if (msg.startsWith ("i would die for you sougo")) {
+  if (msg.startsWith ("i would die for you sougo")) {
       message.react(`🔪`);
       return botschannel.send("You will.");
     }
@@ -205,16 +203,16 @@ bot.on('message', message => {
   }
 
   if(cmd ===`${prefix}help`){
-  let helpembed = new Discord.RichEmbed()
-  .setDescription("Do not include < > when using commands. \nCommand phrases are not caps sensitive")
-  .setColor("#825aae")
-  .addField("Commands:","**s!sougo** *<question>* | Ask him anything. \n**s!send** *<@user> <message>* | Send a DM to the mentioned user\n**s!scout** | Solo Yolo \n**s!quote** | Random quote\n**s!say** *<message>* | Have the bot say anything you want\n**s!help** | Displays this help message")
-  .addField("Basic s!commands:", "mafia (alias:maf) || smooch | rank || tiddy || dickgrab || cat")
-  .addField("Command phrases:", "I love you Sougo || I would die for you Sougo || Good morning Sougo || Good night Sougo")
+    let helpembed = new Discord.RichEmbed()
+    .setDescription("Do not include < > when using commands. \nCommand phrases are not caps sensitive")
+    .setColor("#825aae")
+    .addField("Commands:","**s!sougo** *<question>* | Ask him anything. \n**s!send** *<@user> <message>* | Send a DM to the mentioned user\n**s!scout** | Solo Yolo \n**s!quote** | Random quote\n**s!say** *<message>* | Have the bot say anything you want\n**s!help** | Displays this help message")
+    .addField("Basic s!commands:", "mafia (alias:maf) || smooch | rank || tiddy || dickgrab || cat")
+    .addField("Command phrases:", "I love you Sougo || I would die for you Sougo || Good morning Sougo || Good night Sougo")
   return botschannel.send(helpembed);
 }
 
-   if(cmd === `${prefix}cat`){
+  if(cmd === `${prefix}cat`){
     botschannel.send ({files:["./images/nya.png"]});
   }
   
