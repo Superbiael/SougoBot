@@ -46,7 +46,7 @@ bot.on('message', message => {
   msg = message.content.toLowerCase();
 
   if(msg.startsWith (prefix + "quote")) {
-    number = 20;
+    number = 19;
     var random = Math.floor (Math.random() * (number)) + 1;
     switch (random) {
       case 1: botschannel.send ("I wonder if you’ll watch over me from by my side."); break;
@@ -66,7 +66,10 @@ bot.on('message', message => {
       case 16: botschannel.send ("In the world I used to live in, only those with the power to control large amounts of cash were taken seriously. I understand that it's not easy for someone to focus on each of us equally as you have done."); break;
       case 17: botschannel.send ("I'm really happy that everyone's speaking so  highly of me... It makes me feel that no matter how far I must go, I can keep going."); break;
       case 18: botschannel.send ("I'm perfectly fine with Re:vale casting magic on me!"); break;
+      case 19: botschannel.send ("Now is a perfect time for me to put my book on dealing with teens to use."); break;
    }
+ }
+
  }
 
   if(msg.startsWith (prefix + "scout")) {
@@ -199,6 +202,7 @@ bot.on('message', message => {
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
     .addField("Twitter:", "https://twitter.com/Superbiael")
+    .addField("Ko-Fi:", "https://ko-fi.com/superbiael")
   return botschannel.send(botembed);
   }
 
