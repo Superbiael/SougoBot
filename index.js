@@ -68,9 +68,7 @@ bot.on('message', message => {
       case 18: botschannel.send ("I'm perfectly fine with Re:vale casting magic on me!"); break;
       case 19: botschannel.send ("Now is a perfect time for me to put my book on dealing with teens to use."); break;
    }
- }
-
- }
+  }
 
   if(msg.startsWith (prefix + "scout")) {
    number = 66
