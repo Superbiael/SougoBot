@@ -46,7 +46,7 @@ bot.on('message', message => {
   msg = message.content.toLowerCase();
 
   if(msg.startsWith (prefix + "quote")) {
-    number = 19;
+    number = 20;
     var random = Math.floor (Math.random() * (number)) + 1;
     switch (random) {
       case 1: botschannel.send ("I wonder if you’ll watch over me from by my side."); break;
@@ -67,8 +67,9 @@ bot.on('message', message => {
       case 17: botschannel.send ("I'm really happy that everyone's speaking so  highly of me... It makes me feel that no matter how far I must go, I can keep going."); break;
       case 18: botschannel.send ("I'm perfectly fine with Re:vale casting magic on me!"); break;
       case 19: botschannel.send ("Now is a perfect time for me to put my book on dealing with teens to use."); break;
+      case 20: botschannel.send ("There's a ton of things I want to be perfect at, but I'm still working on that. It's like I'm the very personification of the phrase \"Jack of all trades, master of mone\"..."); break;
    }
-  }
+ }
 
   if(msg.startsWith (prefix + "scout")) {
    number = 66
@@ -199,6 +200,7 @@ bot.on('message', message => {
     .setColor("#825aae")
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
+    .addField("# of quotes:", "20")
     .addField("Twitter:", "https://twitter.com/Superbiael")
     .addField("Ko-Fi:", "https://ko-fi.com/superbiael")
   return botschannel.send(botembed);
@@ -219,11 +221,8 @@ bot.on('message', message => {
   }
   
    if(cmd === `${prefix}smooch`){
-      let modRole = message.guild.roles.find("name","QUEEN.");
-      if(message.member.roles.has(modRole.id)) {
+      if(message.author.id != "239834856727642121") return;
         botschannel.send("Fufu... I'm getting a little embarrassed. I hope you don't mind if I return the favor~");
-      } else {
-        botschannel.send("O-Oh, that was out of nowhere.");
       }
   }
 
