@@ -223,7 +223,6 @@ bot.on('message', message => {
    if(cmd === `${prefix}smooch`){
       if(message.author.id != "239834856727642121") return;
         botschannel.send("Fufu... I'm getting a little embarrassed. I hope you don't mind if I return the favor~");
-      }
   }
 
   if(cmd === `${prefix}mafia` || cmd === `${prefix}maf`){
