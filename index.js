@@ -46,7 +46,7 @@ bot.on('message', message => {
   msg = message.content.toLowerCase();
 
   if(msg.startsWith (prefix + "quote")) {
-    number = 20;
+    number = 23;
     var random = Math.floor (Math.random() * (number)) + 1;
     switch (random) {
       case 1: botschannel.send ("I wonder if you’ll watch over me from by my side."); break;
@@ -68,6 +68,9 @@ bot.on('message', message => {
       case 18: botschannel.send ("I'm perfectly fine with Re:vale casting magic on me!"); break;
       case 19: botschannel.send ("Now is a perfect time for me to put my book on dealing with teens to use."); break;
       case 20: botschannel.send ("There's a ton of things I want to be perfect at, but I'm still working on that. It's like I'm the very personification of the phrase \"Jack of all trades, master of mone\"..."); break;
+      case 21: botschannel.send ("I tend to neglect my health by being too focused on work, and Yamato-san tells me using too much tabasco is ba for me, so I'm not sure if I know of anything that could help...."); break;
+      case 22: botschannel.send ("Visiting Re:vale's golden show was a great experience. There's a great lot I could learn from them."); break;
+      case 23: botschannel.send ("I was at a total loss when I realized I was talking to Tsunashi-san on the phone, during a live broadfast... It was such a shock that I fumbled my greeting..."); break;
    }
  }
 
@@ -200,7 +203,7 @@ bot.on('message', message => {
     .setColor("#825aae")
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
-    .addField("# of quotes:", "20")
+    .addField("# of quotes:", "23")
     .addField("Twitter:", "https://twitter.com/Superbiael")
     .addField("Ko-Fi:", "https://ko-fi.com/superbiael")
   return botschannel.send(botembed);
