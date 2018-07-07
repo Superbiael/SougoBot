@@ -204,8 +204,7 @@ bot.on('message', message => {
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
     .addField("# of quotes:", "23")
-    .addField("Twitter:", "https://twitter.com/Superbiael")
-    .addField("Ko-Fi:", "https://ko-fi.com/superbiael")
+    .addField("Scout", "66 cards")
   return botschannel.send(botembed);
   }
 
