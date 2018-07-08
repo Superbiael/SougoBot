@@ -74,8 +74,8 @@ bot.on('message', message => {
    }
  }
 
-  if(msg.startsWith (prefix + "scout")) {
-   number = 66;
+ if(msg.startsWith (prefix + "scout")) {
+   number = 67;
    var random = Math.floor (Math.random() * (number)) + 1;
    switch (random) {
      case 1: botschannel.send ({files:["./images/soug_xmasmagic_ssr.png"]}); break;
@@ -144,9 +144,9 @@ bot.on('message', message => {
      case 64: botschannel.send ({files:["./images/yukisougo_shufle_ssr.png"]}); break;
      case 65: botschannel.send ({files:["./images/sougo_12sg_sr.png"]}); break;
      case 66: botschannel.send ({files:["./images/sougo_off_ssr.png"]}); break;
+     case 67: botschannel.send ({files:["./images/sougo_rti_ssr.png"]}); break;
    }
  }
-
   if (msg.startsWith (prefix + "send")) {
        if (mention == null) { return; }
         message.delete();
@@ -202,9 +202,8 @@ bot.on('message', message => {
     .setDescription("Bot Information")
     .setColor("#825aae")
     .setThumbnail(bicon)
-    .addField("Bot Name", bot.user.username)
     .addField("# of quotes:", "23")
-    .addField("Scout", "66 cards")
+    .addField("Scout", "67 cards")
   return botschannel.send(botembed);
   }
 
@@ -212,7 +211,7 @@ bot.on('message', message => {
     let helpembed = new Discord.RichEmbed()
     .setDescription("Do not include < > when using commands. \nCommand phrases are not caps sensitive")
     .setColor("#825aae")
-    .addField("Commands:","**s!sougo** *<question>* | Ask him anything. \n**s!send** *<@user> <message>* | Send a DM to the mentioned user\n**s!scout** | Solo Yolo \n**s!quote** | Random quote\n**s!say** *<message>* | Have the bot say anything you want\n**s!help** | Displays this help message")
+    .addField("Commands:","**s!sougo** *<question>* | Ask him anything. \n**s!send** *<@user> <message>* | Send a DM to the mentioned user\n**s!scout** | Solo Yolo \n**s!quote** | Random quote\n**s!say** *<message>* | Have the bot say anything you want\n**s!help** | Displays this help message \n**s!botinfo**")
     .addField("Basic s!commands:", "mafia (alias:maf) || smooch | rank || tiddy || dickgrab || cat")
     .addField("Command phrases:", "I love you Sougo || I would die for you Sougo || Good morning Sougo || Good night Sougo")
   return botschannel.send(helpembed);
