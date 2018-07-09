@@ -46,7 +46,7 @@ bot.on('message', message => {
   msg = message.content.toLowerCase();
 
   if(msg.startsWith (prefix + "quote")) {
-    number = 23;
+    number = 24;
     var random = Math.floor (Math.random() * (number)) + 1;
     switch (random) {
       case 1: botschannel.send ("I wonder if you’ll watch over me from by my side."); break;
@@ -71,6 +71,7 @@ bot.on('message', message => {
       case 21: botschannel.send ("I tend to neglect my health by being too focused on work, and Yamato-san tells me using too much tabasco is ba for me, so I'm not sure if I know of anything that could help...."); break;
       case 22: botschannel.send ("Visiting Re:vale's golden show was a great experience. There's a great lot I could learn from them."); break;
       case 23: botschannel.send ("I was at a total loss when I realized I was talking to Tsunashi-san on the phone, during a live broadfast... It was such a shock that I fumbled my greeting..."); break;
+      case 24: botschannel.send ("The burning light gave me the courage to step out into the road of dawn. If I hold onto this light I can go anywhere. When your feet freezes with fear, I will shine the light."); break;
    }
  }
 
@@ -202,7 +203,7 @@ bot.on('message', message => {
     .setDescription("Bot Information")
     .setColor("#825aae")
     .setThumbnail(bicon)
-    .addField("# of quotes:", "23")
+    .addField("# of quotes:", "24")
     .addField("Scout", "67 cards")
   return botschannel.send(botembed);
   }
