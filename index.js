@@ -72,6 +72,7 @@ bot.on('message', message => {
       case 22: botschannel.send ("Visiting Re:vale's golden show was a great experience. There's a great lot I could learn from them."); break;
       case 23: botschannel.send ("I was at a total loss when I realized I was talking to Tsunashi-san on the phone, during a live broadfast... It was such a shock that I fumbled my greeting..."); break;
       case 24: botschannel.send ("The burning light gave me the courage to step out into the road of dawn. If I hold onto this light I can go anywhere. When your feet freezes with fear, I will shine the light."); break;
+      case 25: botschannel.send ("Thank you for always doing your best for us. We'll be sure to make it possible to meet your expectations, so I'm happy to give you my support from now on as well."); break;
    }
  }
 
@@ -203,7 +204,7 @@ bot.on('message', message => {
     .setDescription("Bot Information")
     .setColor("#825aae")
     .setThumbnail(bicon)
-    .addField("# of quotes:", "24")
+    .addField("# of quotes:", "25")
     .addField("Scout", "67 cards")
   return botschannel.send(botembed);
   }
