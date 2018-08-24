@@ -46,7 +46,7 @@ bot.on('message', message => {
   msg = message.content.toLowerCase();
 
   if(msg.startsWith (prefix + "quote")) {
-    number = 24;
+    number = 25;
     var random = Math.floor (Math.random() * (number)) + 1;
     switch (random) {
       case 1: botschannel.send ("I wonder if you’ll watch over me from by my side."); break;
