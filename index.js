@@ -77,7 +77,7 @@ bot.on('message', message => {
  }
 
  if(msg.startsWith (prefix + "scout")) {
-   number = 67;
+   number = 68;
    var random = Math.floor (Math.random() * (number)) + 1;
    switch (random) {
      case 1: botschannel.send ({files:["./images/soug_xmasmagic_ssr.png"]}); break;
@@ -147,6 +147,7 @@ bot.on('message', message => {
      case 65: botschannel.send ({files:["./images/sougo_12sg_sr.png"]}); break;
      case 66: botschannel.send ({files:["./images/sougo_off_ssr.png"]}); break;
      case 67: botschannel.send ({files:["./images/sougo_rti_ssr.png"]}); break;
+     case 68: botschannel.send ({files:["./images/sougo+iori_shuffle_ssr.png"]}); break;
    }
  }
   if (msg.startsWith (prefix + "send")) {
@@ -205,7 +206,7 @@ bot.on('message', message => {
     .setColor("#825aae")
     .setThumbnail(bicon)
     .addField("# of quotes:", "25")
-    .addField("Scout", "67 cards")
+    .addField("Scout", "68 cards")
   return botschannel.send(botembed);
   }
 
