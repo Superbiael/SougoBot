@@ -191,7 +191,7 @@ bot.on('message', message => {
       case 4: botschannel.send ("I'm not sure if I'm worthy enough for your affection... but it makes me happy that you think I am!"); break;
       case 5: botschannel.send ("Thank you, I feel comfortable spending time with you. <:sougo:454123472256237600>"); break;
       case 6: botschannel.send ("Lift your face, please. You'll regret it later if you don’t look me in the face now"); break;
-      case 7: botschannel.send ("Thank you for caring about me, and loving me. I love you so much, too.\nLet's continue to make irreplacable memories together.")
+      case 7: botschannel.send ("Thank you for caring about me, and loving me. I love you so much, too.\nLet's continue to make irreplacable memories together."); break;
    }
  }
 
