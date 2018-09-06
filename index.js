@@ -45,10 +45,10 @@ bot.on('message', message => {
   msg = message.content.toLowerCase();
 
   if(msg.startsWith (prefix + "quote")) {
-    number = 30;
-    var random = Math.floor (Math.random() * (number)) + 1;
-    switch (random) {
-      case 1: botschannel.send ("I wonder if you’ll watch over me from by my side."); break;
+     number = 30;
+     var random = Math.floor (Math.random() * (number)) + 1;
+     switch (random) {
+        case 1: botschannel.send ("I wonder if you’ll watch over me from by my side."); break;
       case 2: botschannel.send ("I'm glad that I didn't give up on my dreams."); break;
       case 3: botschannel.send ("I want to become a little bit more manly."); break;
       case 4: botschannel.send ("While you were busy fucking around, I studied the blade."); break;
@@ -77,14 +77,14 @@ bot.on('message', message => {
       case 28: botschannel.send ("\"Maybe\" is the best..."); break;
       case 29: botschannel.send ("This unbearable feeling of happiness and motivation is true bliss. I'm glad I found something I love. \nI'm glad I met friends who ackowledge the things I love.\nI think I'm too escited to sleep tonight."); break;
       case 30: botschannel.send ("I think my feelings may have changed quite a bit. I became an idol because it was my dream to do so, but back whe nI'd just joined IDOLiSH7, I don't think I understood myself, or what it meant to make my dream come true. \nI forgot what was really important, because I was only concerned with succeeding in the tasks given to me, and not causing anyone trouble. \nEven thought I'd supposedly become an idol to live true to myself."); break;
+    }
    }
- }
-
- if(msg.startsWith (prefix + "scout")) {
-   number = 68;
-   var random = Math.floor (Math.random() * (number)) + 1;
-   switch (random) {
-     case 1: botschannel.send ({files:["./images/soug_xmasmagic_ssr.png"]}); break;
+  
+   if(msg.startsWith (prefix + "scout")) {
+     number = 68;
+     var random = Math.floor (Math.random() * (number)) + 1;
+     switch (random) {
+        case 1: botschannel.send ({files:["./images/soug_xmasmagic_ssr.png"]}); break;
      case 2: botschannel.send ({files:["./images/sougo_ainanapolice_r.png"]}); break;
      case 3: botschannel.send ({files:["./images/sougo_ainanapolice_sr.png"]}); break;
      case 4: botschannel.send ({files:["./images/sougo_ainanapolice_ssr.png"]}); break;
@@ -152,105 +152,105 @@ bot.on('message', message => {
      case 66: botschannel.send ({files:["./images/sougo_off_ssr.png"]}); break;
      case 67: botschannel.send ({files:["./images/sougo_rti_ssr.png"]}); break;
      case 68: botschannel.send ({files:["./images/sougo+iori_shuffle_ssr.png"]}); break;
+    }
    }
+
+   if(msg.startsWith (prefix + "smooch")) {
+     if(message.author.id != "239834856727642121") return;
+     return botschannel.send("Fufu... I'm getting a little embarrassed. I hope you don't mind if I return the favor~");
  }
 
- if(msg.startsWith (prefix + "smooch")) {
-   if(message.author.id != "239834856727642121") return;
-   return botschannel.send("Fufu... I'm getting a little embarrassed. I hope you don't mind if I return the favor~");
- }
-
-  if (msg.startsWith (prefix + "send")) {
-       if (mention == null) { return; }
-        message.delete();
-        mentionMessage = message.content.slice(6);
-        mention.send (mentionMessage);
+   if (msg.startsWith (prefix + "send")) {
+     if (mention == null) { return; }
+     message.delete();
+     mentionMessage = message.content.slice(6);
+     mention.send (mentionMessage);
       }
 
-    if(msg.startsWith (prefix + "rank")) {
-        number = 5;
-        var random = Math.floor (Math.random() * (number)) + 1;
-        switch (random) {
-          case 1: botschannel.send ("Tonight we'll practive all night"); break;
-          case 2: botschannel.send ("I wanted to do a bit more..."); break;
-          case 3: botschannel.send ("I can still keep going!"); break;
-          case 4: botschannel.send ("This is the best feeling ever!"); break;
-          case 5: botschannel.send ("I was able to shine because of you."); break;
-       }
-     }
-
-    if (msg.startsWith ("i love you sougo")) {
-    if(message.author.id != "239834856727642121") return;
-    number = 7;
-    var random = Math.floor (Math.random() * (number)) + 1;
-    switch (random) {
-      case 1: botschannel.send ("I love you too, Haru. Spending time with you is like a dream come true. I'm so happy!\n<:sougo:454123472256237600>"); break;
-      case 2: botschannel.send ("If you would allow me to be selfish, I'd like to say that I love you more."); break;
-      case 3: botschannel.send ("I really love you too. I'd like to nuture this feeling forever, and I hope you will keep loving me, too."); break;
-      case 4: botschannel.send ("I'm not sure if I'm worthy enough for your affection... but it makes me happy that you think I am!"); break;
-      case 5: botschannel.send ("Thank you, I feel comfortable spending time with you. <:sougo:454123472256237600>"); break;
-      case 6: botschannel.send ("Lift your face, please. You'll regret it later if you don’t look me in the face now"); break;
-      case 7: botschannel.send ("Thank you for caring about me, and loving me. I love you so much, too.\nLet's continue to make irreplacable memories together."); break;
+   if(msg.startsWith (prefix + "rank")) {
+     number = 5;
+     var random = Math.floor (Math.random() * (number)) + 1;
+     switch (random) {
+        case 1: botschannel.send ("Tonight we'll practive all night"); break;
+        case 2: botschannel.send ("I wanted to do a bit more..."); break;
+        case 3: botschannel.send ("I can still keep going!"); break;
+        case 4: botschannel.send ("This is the best feeling ever!"); break;
+        case 5: botschannel.send ("I was able to shine because of you."); break;
+    }
    }
- }
 
-    if (msg.startsWith ("i would die for you sougo")) {
-      message.react(`🔪`);
+   if (msg.startsWith ("i love you sougo")) {
+     if(message.author.id != "239834856727642121") return;
+     number = 7;
+     var random = Math.floor (Math.random() * (number)) + 1;
+     switch (random) {
+        case 1: botschannel.send ("I love you too, Haru. Spending time with you is like a dream come true. I'm so happy!\n<:sougo:454123472256237600>"); break;
+        case 2: botschannel.send ("If you would allow me to be selfish, I'd like to say that I love you more."); break;
+        case 3: botschannel.send ("I really love you too. I'd like to nuture this feeling forever, and I hope you will keep loving me, too."); break;
+        case 4: botschannel.send ("I'm not sure if I'm worthy enough for your affection... but it makes me happy that you think I am!"); break;
+        case 5: botschannel.send ("Thank you, I feel comfortable spending time with you. <:sougo:454123472256237600>"); break;
+        case 6: botschannel.send ("Lift your face, please. You'll regret it later if you don’t look me in the face now"); break;
+        case 7: botschannel.send ("Thank you for caring about me, and loving me. I love you so much, too.\nLet's continue to make irreplacable memories together."); break;
+    }
+   }
+
+   if (msg.startsWith ("i would die for you sougo")) {
+     message.react(`🔪`);
       return botschannel.send("You will.");
     }
-
-    if (msg.startsWith ("good morning sougo")) {
-    return botschannel.send("Good morning. Let's do our best today!");
+  
+   if (msg.startsWith ("good morning sougo")) {
+     return botschannel.send("Good morning. Let's do our best today!");
     }
 
-    if (msg.startsWith ("good night sougo")) {
-    number = 2;
+   if (msg.startsWith ("good night sougo")) {
+     number = 2;
     var random = Math.floor (Math.random() * (number)) + 1;
     switch (random) {
-      case 1: botschannel.send ("Good night. I look forward to seeing you again tomorrow morning!"); break;
+        case 1: botschannel.send ("Good night. I look forward to seeing you again tomorrow morning!"); break;
       case 2: botschannel.send ("If you're still awake, then maybe I'll stay up too."); break;
+    }
    }
- }
 
-  if(cmd ===`${prefix}botinfo`){
-  let bicon = bot.user.displayAvatarURL;
-  let botembed = new Discord.RichEmbed()
-    .setDescription("Bot Information")
-    .setColor("#825aae")
+   if(cmd ===`${prefix}botinfo`){
+     let bicon = bot.user.displayAvatarURL;
+     let botembed = new Discord.RichEmbed()
+        .setDescription("Bot Information")
+        .setColor("#825aae")
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
     .addField("# of quotes:", "30")
     .addField("Scout", "68 cards")
   return botschannel.send(botembed);
-  }
+    }
 
-  if(cmd ===`${prefix}help`){
-  let helpembed = new Discord.RichEmbed()
-    .setDescription("Do not include < > when using commands. \nCommand phrases are not caps sensitive")
+   if(cmd ===`${prefix}help`){
+     let helpembed = new Discord.RichEmbed()
+        .setDescription("Do not include < > when using commands. \nCommand phrases are not caps sensitive")
     .setColor("#825aae")
     .addField("Commands:","**s!sougo** *<question>* | Ask him anything. \n**s!send** *<@user> <message>* | Send a DM to the mentioned user\n**s!scout** | Solo Yolo \n**s!quote** | Random quote\n**s!say** *<message>* | Have the bot say anything you want\n**s!help** | Displays this help message")
     .addField("Basic s!commands:", "mafia (alias:maf) || smooch | rank || tiddy")
     .addField("Command phrases:", "I love you Sougo || I would die for you Sougo || Good morning Sougo || Good night Sougo")
   return botschannel.send(helpembed);
-}
+    }
 
-  if(cmd === `${prefix}mafia` || cmd === `${prefix}maf`){
+   if(cmd === `${prefix}mafia` || cmd === `${prefix}maf`){
     return botschannel.send("maf maf");
-  }
+    }
 
    if(cmd === `${prefix}tiddy`){
     return botschannel.send ("Tsunashi-san!", {files:["./images/icons306.png"]});
-}
+    }
 
    if(cmd === `${prefix}dickgrab`){
     return botschannel.send ("Sorry Tsunashi-san if this looks gay to the viewers.", {files:["./images/dickgrab.png"]});
-}
+    }
 
    if(cmd === `${prefix}say`){
-  let botmessage = args.join(" ");
-  message.delete().catch();
-  botschannel.send(botmessage);
-}
+     let botmessage = args.join(" ");
+     message.delete().catch();
+     botschannel.send(botmessage);
+    }
 });
 
 bot.login(process.env.token);
