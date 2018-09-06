@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 const fs = require("fs");
-bot.commands = new Discord.Collection();
 const prefix = "s!";
+bot.commands = new Discord.Collection();
 
 fs.readdir("./commands/", (err, files) => {
 
@@ -79,81 +79,12 @@ bot.on('message', message => {
       case 30: botschannel.send ("I think my feelings may have changed quite a bit. I became an idol because it was my dream to do so, but back whe nI'd just joined IDOLiSH7, I don't think I understood myself, or what it meant to make my dream come true. \nI forgot what was really important, because I was only concerned with succeeding in the tasks given to me, and not causing anyone trouble. \nEven thought I'd supposedly become an idol to live true to myself."); break;
     }
    }
-  
-   if(msg.startsWith (prefix + "scout")) {
-     number = 68;
-     var random = Math.floor (Math.random() * (number)) + 1;
-     switch (random) {
-        case 1: botschannel.send ({files:["./images/soug_xmasmagic_ssr.png"]}); break;
-     case 2: botschannel.send ({files:["./images/sougo_ainanapolice_r.png"]}); break;
-     case 3: botschannel.send ({files:["./images/sougo_ainanapolice_sr.png"]}); break;
-     case 4: botschannel.send ({files:["./images/sougo_ainanapolice_ssr.png"]}); break;
-     case 5: botschannel.send ({files:["./images/sougo_dayoff_ssr.png"]}); break;
-     case 6: botschannel.send ({files:["./images/sougo_marchen_ssr.png"]}); break;
-     case 7: botschannel.send ({files:["./images/sougo_mlullaby_ssr.png"]}); break;
-     case 8: botschannel.send ({files:["./images/sougo_sweets_ssr.png"]}); break;
-     case 9: botschannel.send ({files:["./images/sougo_unit_ssr.png"]}); break;
-     case 10:botschannel.send ({files:["./images/sougo_unit_ur.png"]}); break;
-     case 11:botschannel.send ({files:["./images/sougo_valentine_ssr.png"]}); break;
-     case 12: botschannel.send ({files:["./images/sougo_whiteday_sr.png"]}); break;
-     case 13: botschannel.send ({files:["./images/sougo_whiteday_ssr.png"]}); break;
-     case 14: botschannel.send ({files:["./images/sougo_whiteside_ssr.png"]}); break;
-     case 15: botschannel.send ({files:["./images/sougo_winterwonderland_sr.png"]}); break;
-     case 16: botschannel.send ({files:["./images/sougo_winterwonderland_ssr.png"]}); break;
-     case 17: botschannel.send ({files:["./images/sougo_wishvoyage_ur.png"]}); break;
-     case 18: botschannel.send ({files:["./images/sougo_work_sr.png"]}); break;
-     case 19: botschannel.send ({files:["./images/sougo_work_ssr.png"]}); break;
-     case 20: botschannel.send ({files:["./images/sougo_album_ssr.png"]}); break;
-     case 21: botschannel.send ({files:["./images/sougo_birthday_sr.png"]}); break;
-     case 22: botschannel.send ({files:["./images/sougo_birthday_ssr.png"]}); break;
-     case 23: botschannel.send ({files:["./images/sougo_endofyear_sr.png"]}); break;
-     case 24: botschannel.send ({files:["./images/sougo_endofyear_ssr.png"]}); break;
-     case 25: botschannel.send ({files:["./images/sougo_joker_ssr.png"]}); break;
-     case 26: botschannel.send ({files:["./images/sougo_linkedfeelings_ssr.png"]}); break;
-     case 27: botschannel.send ({files:["./images/sougo_lovegame_ssr.png"]}); break;
-     case 28: botschannel.send ({files:["./images/sougo_monster_sr.png"]}); break;
-     case 29: botschannel.send ({files:["./images/sougo_monster_ssr.png"]}); break;
-     case 30: botschannel.send ({files:["./images/sougo_nanatsuirorealize_ssr.png"]}); break;
-     case 31: botschannel.send ({files:["./images/sougo_ordinarydays_r.png"]}); break;
-     case 32: botschannel.send ({files:["./images/sougo_ordinarydays_sr.png"]}); break;
-     case 33: botschannel.send ({files:["./images/sougo_ordinarydays_ssr.png"]}); break;
-     case 34: botschannel.send ({files:["./images/sougo_outdoorfes_ssr.png"]}); break;
-     case 35: botschannel.send ({files:["./images/sougo_outdoorfes_ur.png"]}); break;
-     case 36: botschannel.send ({files:["./images/sougo_summermemories_sr.png"]}); break;
-     case 37: botschannel.send ({files:["./images/sougo_summermemories_ssr.png"]}); break;
-     case 38: botschannel.send ({files:["./images/sougo_taisho_ssr.png"]}); break;
-     case 39: botschannel.send ({files:["./images/sougo_whiteday_beat_ssr.png"]}); break;
-     case 40: botschannel.send ({files:["./images/sougo_xmasrock_ssr.png"]}); break;
-     case 41: botschannel.send ({files:["./images/sougo_zodiac_ssr.png"]}); break;
-     case 42: botschannel.send ({files:["./images/sougo_academy_r.png"]}); break;
-     case 43: botschannel.send ({files:["./images/sougo_academy_sr.png"]}); break;
-     case 44: botschannel.send ({files:["./images/sougo_academy_ssr.png"]}); break;
-     case 45: botschannel.send ({files:["./images/sougo_butterfly_ssr.png"]}); break;
-     case 46: botschannel.send ({files:["./images/sougo_christmas_ssr.png"]}); break;
-     case 47: botschannel.send ({files:["./images/sougo_halloween_sr.png"]}); break;
-     case 48: botschannel.send ({files:["./images/sougo_halloween_ssr.png"]}); break;
-     case 49: botschannel.send ({files:["./images/sougo_indoorfes_ssr.png"]}); break;
-     case 50: botschannel.send ({files:["./images/sougo_kingpudding_ssr.png"]}); break;
-     case 51: botschannel.send ({files:["./images/sougo_memomelo_sr.png"]}); break;
-     case 52: botschannel.send ({files:["./images/sougo_memomelo_ssr.png"]}); break;
-     case 53: botschannel.send ({files:["./images/sougo_newyear_ssr.png"]}); break;
-     case 54: botschannel.send ({files:["./images/sougo_pg_ssr.png"]}); break;
-     case 55: botschannel.send ({files:["./images/sougo_rabbit_sr.png"]}); break;
-     case 56: botschannel.send ({files:["./images/sougo_rabbit_ssr.png"]}); break;
-     case 57: botschannel.send ({files:["./images/sougo_respo_ssr.png"]}); break;
-     case 58: botschannel.send ({files:["./images/sougo_sakuramessage_sr.png"]}); break;
-     case 59: botschannel.send ({files:["./images/sougo_sakuramessage_ssr.png"]}); break;
-     case 60: botschannel.send ({files:["./images/sougo_sparkle_ssr.png"]}); break;
-     case 61: botschannel.send ({files:["./images/sougo_valentine_ssr.png"]}); break;
-     case 62: botschannel.send ({files:["./images/sougo_work_ssr.png"]}); break;
-     case 63: botschannel.send ({files:["./images/sougo_teagarden_ssr.png"]}); break;
-     case 64: botschannel.send ({files:["./images/yukisougo_shufle_ssr.png"]}); break;
-     case 65: botschannel.send ({files:["./images/sougo_12sg_sr.png"]}); break;
-     case 66: botschannel.send ({files:["./images/sougo_off_ssr.png"]}); break;
-     case 67: botschannel.send ({files:["./images/sougo_rti_ssr.png"]}); break;
-     case 68: botschannel.send ({files:["./images/sougo+iori_shuffle_ssr.png"]}); break;
+
+   if (msg.startsWith (prefix + "scout")) {
+     number = 66;
+     imageNumber = Math.floor (Math.random() * (number)) + 1;
+     return botschannel.send ({files: ["./scout/" + imageNumber + ".png"]})
     }
-   }
 
    if(msg.startsWith (prefix + "smooch")) {
      if(message.author.id != "239834856727642121") return;
@@ -194,13 +125,26 @@ bot.on('message', message => {
     }
    }
 
-   if (msg.startsWith ("i would die for you sougo")) {
-     message.react(`🔪`);
-      return botschannel.send("You will.");
+   if(cmd ===`${prefix}botinfo`){
+     let bicon = bot.user.displayAvatarURL;
+     let botembed = new Discord.RichEmbed()
+        .setDescription("Bot Information")
+        .setColor("#825aae")
+        .setThumbnail(bicon)
+        .addField("Bot Name", bot.user.username)
+        .addField("# of quotes:", "30")
+        .addField("Scout", "68 cards")
+     return botschannel.send(botembed);
     }
-  
-   if (msg.startsWith ("good morning sougo")) {
-     return botschannel.send("Good morning. Let's do our best today!");
+
+   if(cmd ===`${prefix}help`){
+     let helpembed = new Discord.RichEmbed()
+        .setDescription("Do not include < > when using commands. \nCommand phrases are not caps sensitive")
+        .setColor("#825aae")
+        .addField("Commands:","**s!sougo** *<question>* | Ask him anything. \n**s!send** *<@user> <message>* | Send a DM to the mentioned user\n**s!scout** | Solo Yolo \n**s!quote** | Random quote\n**s!say** *<message>* | Have the bot say anything you want\n**s!help** | Displays this help message")
+        .addField("Basic s!commands:", "mafia (alias:maf) || smooch | rank || tiddy")
+        .addField("Command phrases:", "I love you Sougo || I would die for you Sougo || Good morning Sougo || Good night Sougo")
+     return botschannel.send(helpembed);
     }
 
    if (msg.startsWith ("good night sougo")) {
@@ -208,45 +152,32 @@ bot.on('message', message => {
     var random = Math.floor (Math.random() * (number)) + 1;
     switch (random) {
         case 1: botschannel.send ("Good night. I look forward to seeing you again tomorrow morning!"); break;
-      case 2: botschannel.send ("If you're still awake, then maybe I'll stay up too."); break;
+        case 2: botschannel.send ("If you're still awake, then maybe I'll stay up too."); break;
     }
    }
 
-   if(cmd ===`${prefix}botinfo`){
-     let bicon = bot.user.displayAvatarURL;
-     let botembed = new Discord.RichEmbed()
-        .setDescription("Bot Information")
-        .setColor("#825aae")
-    .setThumbnail(bicon)
-    .addField("Bot Name", bot.user.username)
-    .addField("# of quotes:", "30")
-    .addField("Scout", "68 cards")
-  return botschannel.send(botembed);
+   if (msg.startsWith ("i would die for you sougo")) {
+     message.react(`🔪`);
+      return botschannel.send("You will.");
     }
 
-   if(cmd ===`${prefix}help`){
-     let helpembed = new Discord.RichEmbed()
-        .setDescription("Do not include < > when using commands. \nCommand phrases are not caps sensitive")
-    .setColor("#825aae")
-    .addField("Commands:","**s!sougo** *<question>* | Ask him anything. \n**s!send** *<@user> <message>* | Send a DM to the mentioned user\n**s!scout** | Solo Yolo \n**s!quote** | Random quote\n**s!say** *<message>* | Have the bot say anything you want\n**s!help** | Displays this help message")
-    .addField("Basic s!commands:", "mafia (alias:maf) || smooch | rank || tiddy")
-    .addField("Command phrases:", "I love you Sougo || I would die for you Sougo || Good morning Sougo || Good night Sougo")
-  return botschannel.send(helpembed);
+   if (msg.startsWith ("good morning sougo")) {
+     return botschannel.send("Good morning. Let's do our best today!");
     }
 
    if(cmd === `${prefix}mafia` || cmd === `${prefix}maf`){
     return botschannel.send("maf maf");
     }
 
-   if(cmd === `${prefix}tiddy`){
+   if(msg.startsWith (prefix + "tiddy")) {
     return botschannel.send ("Tsunashi-san!", {files:["./images/icons306.png"]});
     }
 
-   if(cmd === `${prefix}dickgrab`){
+   if(msg.startsWith (prefix + "dickgrab")) {
     return botschannel.send ("Sorry Tsunashi-san if this looks gay to the viewers.", {files:["./images/dickgrab.png"]});
     }
 
-   if(cmd === `${prefix}say`){
+   if(msg.startsWith (prefix + "say")) {
      let botmessage = args.join(" ");
      message.delete().catch();
      botschannel.send(botmessage);
