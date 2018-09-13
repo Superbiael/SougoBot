@@ -12,9 +12,9 @@ module.exports.run = async (bot, message, args) => {
    .addField("Question:", question)
    .addField("Answer:", replies[result]);
 
-   let botschannel = message.guild.channels.find(`name`, "idolbot7");
-   if(!botschannel) return message.channel.send("Couldn't find bot channel.");
-   botschannel.send(ballembed);
+    let botschannel = message.guild.channels.find(`name`, "bot-channel");
+    if(!botschannel) return;
+   return botschannel.send(ballembed);
 }
 
 module.exports.help = {
