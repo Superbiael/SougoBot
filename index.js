@@ -156,6 +156,10 @@ bot.on('message', message => {
     }
    }
 
+   if(cmd === `${prefix}cat`){
+    botschannel.send ({files:["./images/nya.png"]});
+  }
+  
    if (msg.startsWith ("i would die for you sougo")) {
      message.react(`🔪`);
       return botschannel.send("You will.");
