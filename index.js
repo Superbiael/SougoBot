@@ -80,11 +80,15 @@ bot.on('message', message => {
     }
    }
 
-   if (msg.startsWith (prefix + "scout")) {
-     number = 67;
-     imageNumber = Math.floor (Math.random() * (number)) + 1;
-     return botschannel.send ({files: ["./scout/" + imageNumber + ".png"]})
-    }
+//    if (msg.startsWith (prefix + "scout")) {
+//      number = 68;
+//      imageNumber = Math.floor (Math.random() * (number)) + 1;
+//      return botschannel.send ({files: ["./scout/" + imageNumber + ".png"]})
+//     }
+  
+   if(cmd === `${prefix}scout`){
+    botschannel.send ({files:["./scout/68.png"]});
+  }
 
    if(msg.startsWith (prefix + "smooch")) {
      if(message.author.id != "239834856727642121") return;
