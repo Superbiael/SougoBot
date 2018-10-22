@@ -22,7 +22,7 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-  bot.user.setActivity("Diamond Fusion", {type:"LISTENING"});
+  bot.user.setActivity("My 10plate", {type:"LISTENING"});
 });
 
 
@@ -45,7 +45,7 @@ bot.on('message', message => {
   msg = message.content.toLowerCase();
 
   if(msg.startsWith (prefix + "quote")) {
-     number = 30;
+     number = 35;
      var random = Math.floor (Math.random() * (number)) + 1;
      switch (random) {
         case 1: botschannel.send ("I wonder if you’ll watch over me from by my side."); break;
@@ -77,11 +77,16 @@ bot.on('message', message => {
       case 28: botschannel.send ("\"Maybe\" is the best..."); break;
       case 29: botschannel.send ("This unbearable feeling of happiness and motivation is true bliss. I'm glad I found something I love. \nI'm glad I met friends who ackowledge the things I love.\nI think I'm too escited to sleep tonight."); break;
       case 30: botschannel.send ("I think my feelings may have changed quite a bit. I became an idol because it was my dream to do so, but back whe nI'd just joined IDOLiSH7, I don't think I understood myself, or what it meant to make my dream come true. \nI forgot what was really important, because I was only concerned with succeeding in the tasks given to me, and not causing anyone trouble. \nEven thought I'd supposedly become an idol to live true to myself."); break;
+      case 31: botschannel.send ("Tonight we'll practive all night"); break;
+      case 32: botschannel.send ("I wanted to do a bit more..."); break;
+      case 33: botschannel.send ("I can still keep going!"); break;
+      case 34: botschannel.send ("This is the best feeling ever!"); break;
+      case 35: botschannel.send ("I was able to shine because of you."); break;
     }
    }
 
    if (msg.startsWith (prefix + "scout")) {
-     number = 68;
+     number = 69;
      imageNumber = Math.floor (Math.random() * (number)) + 1;
      return botschannel.send ({files: ["./scout/" + imageNumber + ".png"]})
     }
@@ -97,18 +102,6 @@ bot.on('message', message => {
      mentionMessage = message.content.slice(6);
      mention.send (mentionMessage);
       }
-
-   if(msg.startsWith (prefix + "rank")) {
-     number = 5;
-     var random = Math.floor (Math.random() * (number)) + 1;
-     switch (random) {
-        case 1: botschannel.send ("Tonight we'll practive all night"); break;
-        case 2: botschannel.send ("I wanted to do a bit more..."); break;
-        case 3: botschannel.send ("I can still keep going!"); break;
-        case 4: botschannel.send ("This is the best feeling ever!"); break;
-        case 5: botschannel.send ("I was able to shine because of you."); break;
-    }
-   }
 
    if (msg.startsWith ("i love you sougo")) {
      if(message.author.id != "239834856727642121") return;
@@ -132,8 +125,8 @@ bot.on('message', message => {
         .setColor("#825aae")
         .setThumbnail(bicon)
         .addField("Bot Name", bot.user.username)
-        .addField("# of quotes:", "30")
-        .addField("Scout", "67 cards")
+        .addField("# of quotes:", "35")
+        .addField("Scout", "69 cards")
      return botschannel.send(botembed);
     }
 
@@ -142,7 +135,7 @@ bot.on('message', message => {
         .setDescription("Do not include < > when using commands. \nCommand phrases are not caps sensitive")
         .setColor("#825aae")
         .addField("Commands:","**s!sougo** *<question>* | Ask him anything. \n**s!send** *<@user> <message>* | Send a DM to the mentioned user\n**s!scout** | Solo Yolo \n**s!quote** | Random quote\n**s!say** *<message>* | Have the bot say anything you want\n**s!help** | Displays this help message")
-        .addField("Basic s!commands:", "mafia (alias:maf) || smooch | rank || tiddy")
+        .addField("Basic s!commands:", "mafia (alias:maf) || smooch || tiddy")
         .addField("Command phrases:", "I love you Sougo || I would die for you Sougo || Good morning Sougo || Good night Sougo")
      return botschannel.send(helpembed);
     }
@@ -157,7 +150,7 @@ bot.on('message', message => {
    }
 
    if(cmd === `${prefix}cat`){
-    botschannel.send ({files:["./images/nya.png"]});
+    return botschannel.send ({files:["./images/nya.png"]});
   }
   
    if (msg.startsWith ("i would die for you sougo")) {
@@ -184,7 +177,7 @@ bot.on('message', message => {
    if(msg.startsWith (prefix + "say")) {
      let botmessage = args.join(" ");
      message.delete().catch();
-     botschannel.send(botmessage);
+     return message.channel.send(botmessage);
     }
 });
 
