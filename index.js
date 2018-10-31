@@ -86,7 +86,7 @@ bot.on('message', message => {
    }
 
    if (msg.startsWith (prefix + "scout")) {
-     number = 69;
+     number = 70;
      imageNumber = Math.floor (Math.random() * (number)) + 1;
      return botschannel.send ({files: ["./scout/" + imageNumber + ".png"]})
     }
@@ -126,7 +126,7 @@ bot.on('message', message => {
         .setThumbnail(bicon)
         .addField("Bot Name", bot.user.username)
         .addField("# of quotes:", "35")
-        .addField("Scout", "69 cards")
+        .addField("Scout", "70 cards")
      return botschannel.send(botembed);
     }
 
