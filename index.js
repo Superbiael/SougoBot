@@ -149,7 +149,7 @@ bot.on('message', message => {
     }
    }
 
-   if(cmd === `${prefix}cat`){
+   if (msg.startsWith (prefix + "cat")) {
     return botschannel.send ({files:["./images/nya.png"]});
   }
   
