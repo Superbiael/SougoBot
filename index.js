@@ -85,12 +85,16 @@ bot.on('message', message => {
     }
    }
 
-   if (msg.startsWith (prefix + "scout")) {
-     number = 70;
-     imageNumber = Math.floor (Math.random() * (number)) + 1;
-     return botschannel.send ({files: ["./scout/" + imageNumber + ".png"]})
-    }
+//    if (msg.startsWith (prefix + "scout")) {
+//      number = 70;
+//      imageNumber = Math.floor (Math.random() * (number)) + 1;
+//      return botschannel.send ({files: ["./scout/" + imageNumber + ".png"]})
+//     }
 
+   if (msg.startsWith (prefix + "scout")) {
+    return botschannel.send ({files:["./scout/71.png"]});
+  }
+  
    if(msg.startsWith (prefix + "smooch")) {
      if(message.author.id != "239834856727642121") return;
      return botschannel.send("Fufu... I'm getting a little embarrassed. I hope you don't mind if I return the favor~");
@@ -117,18 +121,6 @@ bot.on('message', message => {
         case 7: botschannel.send ("Thank you for caring about me, and loving me. I love you so much, too.\nLet's continue to make irreplacable memories together."); break;
     }
    }
-
-   if(cmd ===`${prefix}botinfo`){
-     let bicon = bot.user.displayAvatarURL;
-     let botembed = new Discord.RichEmbed()
-        .setDescription("Bot Information")
-        .setColor("#825aae")
-        .setThumbnail(bicon)
-        .addField("Bot Name", bot.user.username)
-        .addField("# of quotes:", "35")
-        .addField("Scout", "70 cards")
-     return botschannel.send(botembed);
-    }
 
    if(cmd ===`${prefix}help`){
      let helpembed = new Discord.RichEmbed()
