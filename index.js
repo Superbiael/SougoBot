@@ -86,13 +86,13 @@ bot.on('message', message => {
    }
 
 //    if (msg.startsWith (prefix + "scout")) {
-//      number = 70;
+//      number = 72;
 //      imageNumber = Math.floor (Math.random() * (number)) + 1;
 //      return botschannel.send ({files: ["./scout/" + imageNumber + ".png"]})
 //     }
 
    if (msg.startsWith (prefix + "scout")) {
-    return botschannel.send ({files:["./scout/71.png"]});
+    return botschannel.send ({files:["./scout/72.png"]});
   }
   
    if(msg.startsWith (prefix + "smooch")) {
