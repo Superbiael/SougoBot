@@ -38,8 +38,9 @@ bot.on('message', message => {
   let commandfile = bot.commands.get(cmd.slice(prefix.length));
   if(commandfile) commandfile.run(bot,message,args);
 
-    let botschannel = message.guild.channels.find(`name`, "bot-channel");
-    if(!botschannel) return;
+//   Redirect to a specific channel
+   let botschannel = message.guild.channels.find(channel => channel.name === 'bot-channel');
+   if(!botschannel) return;
 
   mention = message.mentions.users.first();
   msg = message.content.toLowerCase();
