@@ -443,6 +443,9 @@ bot.on("ready", async () => {
       case "valentine":
         return botschannel.send ({files:["./images/cards/ssr/valentine.png"]});
       break;
+      case "valentine live":
+        return botschannel.send ({files:["./images/cards/ssr/valentine_live.png"]});
+      break;
       case "white day":
         return botschannel.send ({files:["./images/cards/ssr/white_day.png"]});
       break;
