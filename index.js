@@ -185,8 +185,8 @@ bot.on("ready", async () => {
     bot.on("message", function(message) {
     msg = message.content.toLowerCase();
     if(!msg.startsWith(prefix)) return;
-//     let botschannel = message.guild.channels.find(`name`, 'bot-channel');
-//     if(!botschannel) return;
+    let botschannel = message.guild.channels.find(`name`, 'bot-channel');
+    if(!botschannel) return;
     var args = message.content.substring(prefix.length).split();
 
     switch (args[0].toLowerCase()) {
