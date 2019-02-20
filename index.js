@@ -169,7 +169,7 @@ bot.on("ready", async () => {
 
      if (msg.startsWith (prefix + "cards")) {
        let cardsembed = new Discord.RichEmbed()
-         .setDescription("Command usage: y!cardname")
+         .setDescription("Command usage: s!cardname\nadd r/sr to the end for other rarities (ex: s!12 songs sr)")
          .setColor("#825aae")
          .addField("SSRs:", "12 Songs Gift\nAinana Roman\nAinana Police | alt: police\nSwaying on the Manami Railway | alt: bno\nConnected Feelings\nDear Butterfly\nGrand Extermination Operation + secret\nHalloween\nIndoor Festival\nLOVE&GAME | alt: l&g\nMemoMelo\nNanatsuiro REALiZE\nOFF/Travel | alt: off\nOutdoor Festival\nRespo\nSakura Message\nSweets\nValetine\nValentine Live\nWhite Special day | alt: white sp\nWork\nXmax Rock\n",true)
          .addField("SSRs:", "Ainana academy | alt: academy\nBirthday Photobook\nChristmas\nCyber Techno | alt: vae \nDay Off\nEnd of Year Live\nHoliday Collection\nJoker Flag\nLight Future\nMonster\nNew Year\nOrdinary Days\nPerfection Gimmick | alt: pg\nRabbit Ears Parka\nRoad to Infinity | alt: rti\nSummer Memories\nTea Party\nValentine Great Escape | alt : vge\nWhite Day\nWinter Wonderland Trip\nXmas Magic\nZodiac",true)
