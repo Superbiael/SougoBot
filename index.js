@@ -95,6 +95,7 @@ bot.on("ready", async () => {
 
    if(msg.startsWith (prefix + "smooch")) {
      if(message.author.id != "239834856727642121") return;
+     if(message.author.id != "489991012949819392") return;
      return message.channel.send("Fufu... I'm getting a little embarrassed. I hope you don't mind if I return the favor~");
  }
 
@@ -107,6 +108,7 @@ bot.on("ready", async () => {
 
    if (msg.startsWith ("i love you sougo")) {
      if(message.author.id != "239834856727642121") return;
+     if(message.author.id != "489991012949819392") return;
      number = 7;
      var random = Math.floor (Math.random() * (number)) + 1;
      switch (random) {
