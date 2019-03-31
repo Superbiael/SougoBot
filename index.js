@@ -39,10 +39,6 @@ bot.on("ready", async () => {
   let commandfile = bot.commands.get(cmd.slice(prefix.length));
   if(commandfile) commandfile.run(bot,message,args);
 
-  // Redirect to specific channel
-  // let botschannel = message.guild.channels.find(channel => channel.name === 'bot-channel');
-  // if(!botschannel) return;
-
   mention = message.mentions.users.first();
   msg = message.content.toLowerCase();
 
@@ -88,14 +84,13 @@ bot.on("ready", async () => {
    }
 
    if (msg.startsWith (prefix + "scout")) {
-     number = 76;
+     number = 77;
      imageNumber = Math.floor (Math.random() * (number)) + 1;
      return message.channel.send ({files: ["./scout/" + imageNumber + ".png"]})
     }
 
    if(msg.startsWith (prefix + "smooch")) {
      if(message.author.id != "239834856727642121") return;
-     if(message.author.id != "489991012949819392") return;
      return message.channel.send("Fufu... I'm getting a little embarrassed. I hope you don't mind if I return the favor~");
  }
 
@@ -108,7 +103,6 @@ bot.on("ready", async () => {
 
    if (msg.startsWith ("i love you sougo")) {
      if(message.author.id != "239834856727642121") return;
-     if(message.author.id != "489991012949819392") return;
      number = 7;
      var random = Math.floor (Math.random() * (number)) + 1;
      switch (random) {
@@ -174,7 +168,7 @@ bot.on("ready", async () => {
          .setColor("#825aae")
          .addField("SSRs:", "12 Songs Gift\nAinana Roman\nAinana Police | alt: police\nSwaying on the Manami Railway | alt: bno\nConnected Feelings\nDear Butterfly\nGrand Extermination Operation + secret\nHalloween\nIndoor Festival\nLOVE&GAME | alt: l&g\nMemoMelo\nNanatsuiro REALiZE\nOFF/Travel | alt: off\nOutdoor Festival\nRespo\nSakura Message\nSweets\nValetine\nValentine Great Escape | alt : vge\nValentine Live\nWhite Special day | alt: white sp\nWork",true)
          .addField("SSRs:", "Ainana academy | alt: academy\nBirthday Photobook\nChristmas\nCyber Techno | alt: vae \nDay Off\nEnd of Year Live\nHoliday Collection\nJoker Flag\nLight Future\nMonster\nNew Year\nOrdinary Days\nPerfection Gimmick | alt: pg\nPhotogenic Life\nRabbit Ears Parka\nRoad to Infinity | alt: rti\nSummer Memories\nTea Party\nWhite Day\nWinter Wonderland Trip\nXmas Magic\nXmax Rock\nZodiac",true)
-         .addField("Ichiban Kuji:", "Marchen Dream\n Happy Sparkle Star | alt: sparkle \n King Pudding\nCelestial Pilgrimage | alt: hoshi \nOrder please \nMechanical Lullaby | alt: mlullaby",true)
+         .addField("Ichiban Kuji:", "Celestial Pilgrimage | alt: hoshi\nHappy Sparkle Star | alt: sparkle\nKing Pudding\nMarchen Dream\nMechanical Lullaby | alt: mlullaby\nOrder Please\nWhite Side\nWonderland in the Dark | alt:wonderland\n",true)
          .addField("URs:", "Outdoor Festival\nUnit\nMusic in your Thoughts | alt: walker\nWish Voyage",true)
          .addField("Others", "Album Bonus\nShuffle Talk \n Shuffle Talk 2018")
          .setFooter("add sr/r to the end for other rarities. (ex: y!ordinary sr)");
@@ -229,6 +223,10 @@ bot.on("ready", async () => {
       break;
       case "white side":
         return message.channel.send ({files:["./images/cards/ichiban/white_side.png"]});
+      break;
+      case "wonderland in the dark":
+      case "wonderland":
+        return message.channel.send ({files:["./images/cards/ichiban/wonderland_in_the_dark.png"]});
       break;
 // Other cards
       case "album abonus":
